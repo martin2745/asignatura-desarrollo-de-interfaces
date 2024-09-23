@@ -1,13 +1,13 @@
 ### Repaso contenido CSS
 
-Referenciamos a la hoja de estilos con la etiqueta `<link>` como en el siguiente caso para enlazar una hoja de estilos CSS externa, llamada `style.css`
+Referenciamos a la hoja de estilos con la etiqueta `<link>` como en el siguiente caso para enlazar una hoja de estilos CSS externa, llamada `styles.css`
 
 ```html
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="styles.css" />
 ```
 
 - **`rel="stylesheet"`** indica que el archivo es una hoja de estilos.
-- **`href="style.css"`** especifica la ubicación del archivo CSS que contiene los estilos para la página.
+- **`href="styles.css"`** especifica la ubicación del archivo CSS que contiene los estilos para la página.
 
 #### Aplicar estilos a elementos
 

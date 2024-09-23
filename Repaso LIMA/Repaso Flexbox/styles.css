@@ -1,0 +1,43 @@
+body {
+  background-color: beige;
+}
+
+.flex-container {
+  border: 1px solid black;
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+
+  /*flex-direction: row;*/
+  /*flex-direction: column;*/
+  /*flex-direction: row-reverse;*/
+  /*flex-direction: column-reverse;*/
+
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: no-wrap;*/
+
+  flex-flow: row wrap;
+
+  justify-content: space-evenly; /*mismo espacio entre los elementos*/
+  /*justify-content: space-around;*/ /*mismo espacio entre los elementos pero la mitad entre primer y último con respecto al borde*/
+  /*justify-content: space-between;*/ /*100% del espacio ocupando la máxima separación entre elementos*/
+  /*justify-content: center;*/
+  /*justify-content: flex-start;*/
+  /*justify-content: flex-end;*/
+
+  /*align-items: stretch;*/
+  /*align-content: center*/
+}
+
+.caja {
+  border: 1px solid black;
+  background-color: white;
+  color: burlywood;
+  font-family: "Courier New", "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  margin: 5px;
+}
