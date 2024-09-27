@@ -1,0 +1,30 @@
+/*
+Propiedad position:
+
+- static
+- relative
+- absolute
+- fixed
+- sticky
+- z-index
+*/
+
+/*
+Al ser position absolute el elemento pierde su espacio reservado en el flujo HTML por lo que se posiciona respecto al elemento padre posicionado
+y en caso de no existir ningún elemento posicionado padre, lo hace con respecto al body.
+*/
+
+#caja3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/*
+Cuando posiciono como relativo el contenedor, el elemento caja3 se posiciona respecto a ese y caja 4 se coloca donde estaba caja 3 ya que esta
+pierde su espacio con respecto a su posición en el HTML.
+*/
+
+#container {
+  position: relative;
+}

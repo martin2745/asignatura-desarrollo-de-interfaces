@@ -1,0 +1,21 @@
+/*
+Propiedad position:
+
+- static
+- relative
+- absolute
+- fixed
+- sticky
+- z-index
+*/
+
+/*
+La caja3 sigue manteniendo su espacio reservado en la posición predefinida entre caja 2 y caja 4,
+por lo que aunque esté posicionada la caja 4 no se desplaza y caja 3 queda superpuesta sobre caja 4.
+*/
+
+#caja3 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
