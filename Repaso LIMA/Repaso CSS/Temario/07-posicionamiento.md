@@ -118,3 +118,5 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 - **Z-index**: controla la superposición de elementos posicionados.
 
 Estas propiedades son fundamentales para controlar la disposición y el comportamiento visual de los elementos en una página web.
+
+[Ir a mediaqueries](08-mediaqueries.md)
