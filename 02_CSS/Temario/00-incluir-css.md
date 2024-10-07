@@ -1,4 +1,4 @@
-### 1. **Hoja de estilos externa**
+### **Hoja de estilos externa**
 
 Esta es la forma más común de agregar CSS y consiste en enlazar un archivo CSS separado desde el documento HTML usando la etiqueta `<link>`. El archivo externo contiene todas las reglas de estilo.
 

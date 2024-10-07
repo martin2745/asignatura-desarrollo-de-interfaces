@@ -1,4 +1,4 @@
-### 1. **Propiedades relacionadas con los colores**
+### **Propiedades relacionadas con los colores**
 
 En CSS, los colores se pueden aplicar a distintos elementos utilizando varias propiedades. Las principales son:
 
