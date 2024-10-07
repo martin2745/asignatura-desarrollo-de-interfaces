@@ -85,6 +85,8 @@ Podemos decir que:
 
 _**Nota**_: La propiedad `flex-shrink` en Flexbox controla cuánto puede **encogerse** un ítem flexible si el espacio en el contenedor es **insuficiente**. Es decir, define si y cuánto se reducirá el tamaño de un ítem en comparación con otros cuando hay **falta de espacio**.
 
+_**Nota 2**_: Por otra parte tenemos `flex-basis` la cual tiene un comportamiento similar al width. Sirve para establecer un tamaño inicial base del objeto flexible.
+
 ### Alinear elementos de forma horizontal
 
 La propiedad `justify-content` en Flexbox se utiliza para **alinear** y **distribuir** los ítems flexibles a lo largo del **eje principal** del contenedor (horizontal si es una fila y vertical si es una columna). Permite controlar cómo se distribuyen los ítems cuando hay **espacio adicional** en el contenedor, asegurando que se coloquen de forma adecuada y equilibrada. Los valores principales son:
@@ -101,11 +103,7 @@ La propiedad `justify-content` en Flexbox se utiliza para **alinear** y **distri
 La propiedad `align-items` en Flexbox se utiliza para **alinear** los ítems flexibles a lo largo del **eje transversal** del contenedor (verticalmente en una fila y horizontalmente en una columna). Esta propiedad permite definir cómo se distribuyen los ítems en el espacio disponible del contenedor, asegurando que queden alineados de acuerdo a la configuración deseada.
 
 1. **`flex-start`**: Los ítems se alinean al **inicio** del contenedor, lo que significa que se agruparán en la parte superior (en un contenedor de fila) o a la izquierda (en un contenedor de columna).
-
 2. **`flex-end`**: Los ítems se alinean al **final** del contenedor, agrupándose en la parte inferior (en un contenedor de fila) o a la derecha (en un contenedor de columna).
-
 3. **`center`**: Los ítems se alinean en el **centro** del contenedor, distribuyéndose equitativamente arriba y abajo (en un contenedor de fila) o a los lados (en un contenedor de columna).
-
 4. **`baseline`**: Los ítems se alinean según su **línea base** de texto. Esto es útil cuando tienes elementos de diferentes tamaños y quieres que se alineen de manera uniforme en base a su texto.
-
 5. **`stretch`** (valor por defecto): Los ítems se estiran para ocupar todo el espacio disponible en el contenedor. Esto significa que, si no se establece un tamaño específico para los ítems, se expandirán para llenar el contenedor.
