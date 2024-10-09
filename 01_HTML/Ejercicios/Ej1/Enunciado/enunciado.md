@@ -1,9 +1,8 @@
-### Enunciado del ejercicio:
+# Ejercicio 1 de HTML y CSS
 
-**Objetivo:**
-Desarrollar un pequeño sitio web utilizando HTML que conste de tres páginas interconectadas: `index.html`, `contenidos.html` y `contacto.html`. Cada página debe cumplir con los siguientes requisitos:
+### HTML básico
 
-#### 1. **Página principal: `index.html`**
+1. **Página principal: `index.html`**
 
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
@@ -13,10 +12,10 @@ Desarrollar un pequeño sitio web utilizando HTML que conste de tres páginas in
     - "Contacto" (que apunte a `contacto.html`)
   - Una línea horizontal (`<hr>`).
   - Un encabezado secundario (`<h2>`) que diga: "Bienvenido a mi webside".
-  - Una imagen de un perro con una altura de 200px (usa un archivo llamado `perro.jpg` en la carpeta `images`).
+  - Una imagen de un perro con una altura de 200px (archivo `perro.jpg` en la carpeta `images`).
   - Un párrafo de texto simulado con "Lorem ipsum...".
 
-#### 2. **Página de contenidos: `contenidos.html`**
+1. **Página de contenidos: `contenidos.html`**
 
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
@@ -33,7 +32,7 @@ Desarrollar un pequeño sitio web utilizando HTML que conste de tres páginas in
 | ------------ | ---------- | ----------------------- | ----------- |
 | Imagen Perro | Imagen Oso | Imagen Caballito de mar | Imagen Gato |
 
-#### 3. **Página de contacto: `contacto.html`**
+3. **Página de contacto: `contacto.html`**
 
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
@@ -45,11 +44,3 @@ Desarrollar un pequeño sitio web utilizando HTML que conste de tres páginas in
     - Un área de texto para la biografía (requerido).
     - Un campo de selección para elegir la edad, con las opciones: "Mayor de edad", "Adulto" y "Mayor de 65 años".
     - Un botón de envío que redirija al `index.html`.
-
-### Entregables:
-
-- Tres archivos HTML:
-  - `index.html`
-  - `contenidos.html`
-  - `contacto.html`
-- URL en comentarios del repositorio con los códigos de la tarea.
