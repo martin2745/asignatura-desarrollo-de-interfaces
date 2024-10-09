@@ -1,48 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#general {
-  width: 1200px;
-  margin: 0px auto; /*Centra un elemento para un ancho definido.*/
-  margin-top: 20px;
-  border: 5px solid black;
-}
-
-header {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  color: wheat;
-  background-color: rgb(50, 50, 200);
-  line-height: 100px;
-}
-
-#menu {
-  background-color: #ccc;
-}
-
-#menu ul li {
-  display: block;
-  float: left;
-  border-right: 1px solid #eee;
-}
-
-#menu ul li:hover {
-  cursor: pointer;
-  background-color: rgb(50, 50, 200);
-}
-
-#menu ul li a {
-  padding: 15px;
-  display: block;
-  color: #444;
-}
-#menu ul li:hover a {
-  color: wheat;
 }
 
 .clearfix {
@@ -50,39 +9,54 @@ header {
   clear: both;
 }
 
-#contenido {
-  width: 70%;
-  float: left;
+#general {
+  width: 1200px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 5px solid black;
 }
 
-#lateral {
-  width: 27%;
-  float: left;
-  min-height: 500px;
-  max-height: 1200px;
-  overflow-y: scroll;
-  text-align: justify;
-}
+/*Cabecera*/
 
-#contenido .caja {
-  background-color: #eee;
-  height: 250px;
-  width: 40%;
-  float: left;
-  margin: 20px;
-  margin-left: 40px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  transition: all 500ms;
-}
-
-#contenido .caja:hover {
-  background-color: rgb(50, 50, 200);
-  cursor: pointer;
-}
-
-#contenido .caja:hover h2 {
+/*Estilos de título de página*/
+header {
+  height: 100px;
+  line-height: 100px;
   color: wheat;
+  background-color: rgb(50, 50, 200);
+  text-align: center;
+}
+
+/*Menú y botones*/
+#menu {
+  background-color: #ccc;
+}
+
+#menu ul li {
+  float: left;
+  border-right: 1px solid #eee;
+  list-style: none;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#menu ul li:hover {
+  background-color: rgb(50, 50, 200);
+}
+
+#menu ul li a:hover {
+  color: wheat;
+}
+
+/*Contenido de la web*/
+/*Cajas*/
+#contenido {
+  float: left;
+  width: 70%;
 }
 
 #contenido > h3 {
@@ -90,17 +64,53 @@ header {
   padding: 15px;
   color: #444;
   text-shadow: 1px 1px 1px black;
+  /*1px de desplazamiento horizontal
+    1px de desplazamiento vertical
+    1px de desenfoque*/
 }
 
+#contenido .caja {
+  float: left;
+  width: 350px;
+  height: 250px;
+  margin: 20px 0px 20px 40px;
+  border-radius: 5px;
+  background-color: #eee;
+  box-shadow: 0px 0px 15px black;
+  transition: all 300ms;
+  /*Todas las propiedades que cambien en el elemento han de realizarlo en un
+  tiempo de 300 milisegundos*/
+}
+
+#contenido .caja:hover {
+  cursor: pointer;
+  background-color: rgb(50, 50, 200);
+}
+
+#contenido .caja:hover h2 {
+  color: wheat;
+}
+
+#contenido .caja > h4 {
+  padding: 10px;
+}
+
+/*Lateral*/
+#lateral {
+  width: 25%;
+  min-height: 500px;
+  max-height: 1165px;
+  overflow-y: scroll;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/*Footer*/
 footer {
   width: 100%;
   height: 55px;
   line-height: 55px;
-  background-color: #eee;
   text-align: center;
+  background-color: #eee;
   border-top: 1px solid #ccc;
-}
-
-h4 {
-  padding: 10px;
 }
