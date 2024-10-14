@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+#website {
+  width: 75%;
+  margin: 0px auto;
+  height: 100vh;
+  border: 1px solid #ccc;
+}
+
+#cabecera {
+  background-color: blue;
+  color: white;
+  line-height: 150px;
+}
+
+#menu {
+  background-color: lightblue;
+  color: black;
+  line-height: 65px;
+}
+
+#contenido {
+  background-color: #eee;
+}
+
+#contenido article {
+  background-color: #ccc;
+  border: 1px solid #555;
+  margin: 5%;
+  padding: 5%;
+}
+
+#lateral {
+  background-color: orange;
+  color: white;
+}
+
+#pie-pagina {
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+}

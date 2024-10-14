@@ -1,0 +1,25 @@
+#website {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 20% 10% 60% 10%;
+}
+
+#cabecera,
+#menu {
+  grid-column: 1/6;
+}
+
+#menu ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+#contenido {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#pie-pagina {
+  grid-column: 1/6;
+}
