@@ -1,0 +1,229 @@
+/*Estilos generales*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b1b;
+}
+
+/*Barra de navegación*/
+.navbar {
+  padding: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icono-github {
+  display: block;
+  width: 3rem;
+  height: auto;
+}
+
+/*Sección desarrollador*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desarrollador {
+  background-color: #f5f6f7;
+  min-height: 28.125rem;
+}
+
+.desarrollador-principal {
+  padding: 3rem;
+}
+
+.desarrollador-imagen {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin: 1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.desarrollador-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+.desarrollador-inferior-imagen {
+  /*Equivalente en bootstrap a la clase img-fluid*/
+  width: 100%;
+  height: auto;
+}
+
+/*Sobre mi*/
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.sobre-mi {
+  height: 31.25rem;
+  padding: 0.625rem;
+}
+
+.sobre-mi .contenedor h2 {
+  text-align: center;
+  width: 37.5rem;
+}
+
+.sobre-mi .contenedor p {
+  width: 37.5rem;
+  text-align: justify;
+}
+
+/*Experiencia*/
+.experiencia {
+  padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+}
+
+.experiencia h2 {
+  margin-bottom: 2rem;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  text-align: center !important;
+}
+.experiencia p {
+  text-align: justify;
+}
+
+.experiencia a {
+  text-decoration: none;
+  color: black;
+  transition: all 300ms;
+}
+
+.experiencia a:hover {
+  color: #7ade30;
+}
+
+.experiencia-contenedor {
+  text-align: center;
+}
+
+.experiencia-titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.columna {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/*Contacto*/
+.contacto > div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 75rem;
+  min-height: 5rem;
+  padding: 1.25rem;
+}
+
+.rectangulo {
+  margin-top: -5rem;
+  background-color: green;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.25rem black;
+}
+
+.contacto .seccion-titulo {
+  font-size: 1.5rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  padding: 1.25rem 2rem;
+  margin: 1rem 0rem;
+  border-radius: 5rem;
+  transition: all 300ms;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: green;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer .footer-iconos a {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+  /*Cuando el tamaño sea igual o menor a 768 píxeles*/
+  .navbar-brand {
+    display: none;
+  }
+
+  .sobre-mi .contenedor p {
+    width: 22rem;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /*Cuando el tamaño sea igual o mayor a 768 píxeles*/
+  .desarrollador-inferior-imagen {
+    max-width: 37.5rem;
+  }
+}
