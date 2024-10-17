@@ -1,12 +1,43 @@
 /*
+
+La propiedad position permite posicionar los elementos. Lo primero es comprender el flujo de renderizado.
+
+1. Flujo de renderizado: Los elementos se dibujan de izquierda a derecha y de arriba abajo. El punto 0,0 
+de los elementos por regla general es la esquina superior izquierda.
+
+2. Espacio reservado: Espacio que tiene un elemento asignado por el navegador. Este espacio se puede
+modificar con propiedades como width o height.
+
+3. Elemento posicionada: El elemento tiene una propiedad position con un valor distinto de "static", que
+es el valor que tiene esta propiedad por defecto.
+
+4. Stackin context: Orden en el que se apilarán las cajas que se superponen, dentro del mismo contenedor.
+
+Al posicionar un elemento se habilitan 5 propiedades que podemos utilizar para mover los elementos en los
+tres ejes.
+
+    top: Movemos el elemento hacia la parte superior.
+    left: Movemos el elemento hacia la derecha.
+    bottom: Movemos el elemento hacia la parte inferior.
+    right: Movemos el elemento hacia la izquierda.
+    z-index: Movemos el elemento en el contexto de apilamiento (eje z).
+
+    Nota1: top y left tienen prioridad sobre bottom y right.
+    Nota2: Estas posiciones admiten tambien valores negativos.
+
 Propiedad position:
 
-- static
-- relative
-- absolute
-- fixed
-- sticky
-- z-index
+- static: Valor por defecto del elemento y por el cual el elemento no está posicionado y no se puede mover.
+- relative: El elemento mantendrá su posición, espacio reservado y medidas en el flujo de renderizado. Si lo
+            movemos lo hará usando su posición en el html como punto de referencia.
+- absolute: El elemento pierde sus medidas y su espacio reservado. Si lo movemos usará el elemento padre 
+            posicionado como referencia. Si no tienen ninuno, usará el elemento html por defecto.
+- fixed: El elemento perderá sus medidas y su espacio reservado. Si lo movemos usará el elemento html por
+        defecto y además quedará fijo en esa posición aunque hagamos scroll.
+- sticky: Mezcla de position relative y fixed. Con este tipo de posicionamiento los valores top, left, bottom
+          y right no sirven para mover el elemento, si no para indicarle en qué punto pasará a tener un
+          comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportará como si tuviera
+          relative.
 */
 
 /*

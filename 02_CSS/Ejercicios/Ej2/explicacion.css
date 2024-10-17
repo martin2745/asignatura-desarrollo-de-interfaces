@@ -1,0 +1,101 @@
+/*relative*/
+
+# caja1 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+}
+
+/*
+caja1 aparece por debajo de caja 2 por contexto de apilamiento una
+vez está posicionada caja2. Sino caja 1 estaría por encima de caja2
+*/
+# caja2 {
+  position: relative;
+}
+
+/*absoluto*/
+/*
+Al posicionar el elemento perderá sus medidas y espacio reservado.
+Usará como contenedor el elemento posicionado más cercano y si no ha
+ninguno será el elemento html.
+*/
+
+/*
+Eliminamos valores de .caja ancho y alto para ver como el elemento 
+pierde sus medidas.
+*/
+
+# caja2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+# container {
+  margin: 100px;
+  /*margin: 0px auto;*/
+  position: relative;
+}
+
+/*fixed*/
+/*
+El elemento va a perder su espacio reservado y medidas al igual que absolute.
+*/
+
+h 2 {
+  position: fixed;
+  background-color: aquamarine;
+  width: 100%;
+  top: 0px;
+}
+
+/*sticky*/
+/*
+Mezcla de position relative y fixed. Con este tipo de posicionamiento los valores top, left, bottom
+y right no sirven para mover el elemento, si no para indicarle en qué punto pasará a tener un
+de posicionamiento fixed, hasta llegar a ese punto se comportará como si tuviera
+relative.
+*/
+
+/*Añadimos un h1 arriba de todo*/
+
+h 2 {
+  position: sticky;
+  background-color: aquamarine;
+  width: 100%;
+  top: 0px;
+}
+
+/*z-index*/
+/*Contexto de apilamiento (dos elementos posicionados, el valor que vale es el del html) decide quien
+se coloca por encima o por debajo*/
+# caja2 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+# caja3 {
+  position: relative;
+}
+
+/*Problema padres e hijos*/
+/*
+Hay que poner al hijo detras del padre siempre que el padre no tenga z-index declarado.
+*/
+
+# container {
+  background-color: black;
+  position: relative;
+  /*z-index: 2;
+  z-index: 2 !important;
+  z-index: 9999999999999;*/
+}
+
+# caja1 {
+  position: relative;
+  z-index: -1;
+}
