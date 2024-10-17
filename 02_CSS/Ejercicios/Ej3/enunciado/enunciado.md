@@ -32,3 +32,11 @@
        - Ocupe el 91% del ancho.
        - Cambia el color de fondo de la barra lateral a **naranja**.
      - La sección de artículos (`#articles`) debe ocupar el 100% del ancho disponible.
+
+---
+
+![Diseño final](../img/diseño.png)
+
+![Diseño responsivo 1](../img/diseño2.png)
+
+![Diseño responsivo 2](../img/diseño3.png)

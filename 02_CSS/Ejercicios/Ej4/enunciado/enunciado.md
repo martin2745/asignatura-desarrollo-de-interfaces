@@ -103,4 +103,6 @@
    - El fondo debe ser de color **#333333** (gris oscuro) y el **texto de color blanco**.
    - El pie de página debe tener una **sombra ligera** con `box-shadow: 0px 0px 2px gray;`.
 
+---
+
 ![Diseño final](../img/diseño.png)
