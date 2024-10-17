@@ -25,7 +25,7 @@
    - **Pantallas medianas (entre 633px y 888px):**
      - Los artículos deben ocupar el 40% del ancho de la pantalla.
      - Cambia el fondo de los artículos a **rojo** en estas resoluciones.
-   - **Pantallas pequeñas (menos de 632px):**
+   - **Pantallas pequeñas (menos de 680px):**
      - Los artículos deben ocupar el 90% del ancho de la pantalla.
      - Cambia el fondo de los artículos a **azul** en estas resoluciones.
      - La barra lateral debe adaptarse de manera que:
