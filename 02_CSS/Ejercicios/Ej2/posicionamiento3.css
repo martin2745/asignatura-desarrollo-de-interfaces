@@ -1,15 +1,4 @@
 /*
-Propiedad position:
-
-- static
-- relative
-- absolute
-- fixed
-- sticky
-- z-index
-*/
-
-/*
 Si haces scroll hacia abajo con un posicionamiento fijo en un elemento lo que ocurre es que este queda en esa posición todo el rato,
 por este motivo, aunque nos desplacemos este permanece fijo.
 */
