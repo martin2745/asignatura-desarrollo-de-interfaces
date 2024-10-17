@@ -22,6 +22,7 @@
 
 4. **Requisitos de Adaptación:**
 
+    - El alumno tendrá que aplicar cinco adaptaciones de estilo para una serie de puntos, como mínimo se tienen que aplicar los siguientes siendo los otros tres de libre elección:
    - **Pantallas medianas (entre 633px y 888px):**
      - Los artículos deben ocupar el 40% del ancho de la pantalla.
      - Cambia el fondo de los artículos a **rojo** en estas resoluciones.
@@ -29,7 +30,7 @@
      - Los artículos deben ocupar el 90% del ancho de la pantalla.
      - Cambia el fondo de los artículos a **azul** en estas resoluciones.
      - La barra lateral debe adaptarse de manera que:
-       - Ocupe el 91% del ancho.
+       - Ocupe el 90% del ancho.
        - Cambia el color de fondo de la barra lateral a **naranja**.
      - La sección de artículos (`#articles`) debe ocupar el 100% del ancho disponible.
 
