@@ -89,7 +89,7 @@
 
 1. **Estructura del contenedor `#sections`**:
 
-   - El contenedor de las secciones debe flotar hacia la derecha con un **ancho del 75%**.
+   - El contenedor de las secciones debe flotar hacia la izquierda con un **ancho del 75%**.
    - Cada sección dentro de `#sections` debe tener un **margen superior de 40 píxeles**, fondo de **color blanco**, y una **sombra suave** con `box-shadow: 0px 0px 4px #c9c9c9;`.
    - Los párrafos dentro de las secciones deben estar **justificados**.
 

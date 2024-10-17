@@ -136,6 +136,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 select {
+  display: block;
   border: 1px solid #c9c9c9;
   box-shadow: 0px 0px 2px #ccc;
   padding: 1px;
@@ -149,6 +150,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 select:focus {
+  display: block;
   border: 1px solid #70b231;
   color: black;
 }
@@ -170,6 +172,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover {
+  display: block;
   box-shadow: 0px 0px 2px gray;
 }
 
@@ -189,19 +192,21 @@ button:hover {
 #aside div input[type="button"],
 #aside div input[type="submit"],
 #aside div button {
+  display: block;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 #aside input,
 #aside label {
+  display: block;
   margin: 0px auto;
   text-align: center;
 }
 
 /*Secciones*/
 #sections {
-  float: right;
+  float: left;
   width: 75%;
   font-family: sans-serif, Arial, Helvetica;
   margin-right: 20px;
