@@ -2,16 +2,23 @@
   display: flex;
   /*display: inline-flex;*/
 
-  flex-direction: row;
+  /*flex-direction: row;*/
   /*flex-direction: column;*/
   /*flex-direction: row-reverse;*/
   /*flex-direction: column-reverse;*/
 
-  flex-wrap: wrap;
-  /*flex-wrap: no-wrap;*/
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: nowrap;*/
+  /*flex-wrap: wrap-reverse;*/
 
   /*flex-flow: row wrap;*/
 }
+
+/*
+La propiedad order permite indicar el orden de los elementos. Por defecto
+los elementos van a ser order:0 por lo que tengo si aplico unicamente order:1
+a un elemento este se colocará al final.
+*/
 
 /*
 .red {
@@ -32,6 +39,10 @@
 */
 
 /*
+La propiedad grow permite establecer el tamaño de cada elemento de forma proporcional.
+*/
+
+/*
 .caja {
   flex-grow: 1;
 }
@@ -45,12 +56,11 @@
 }
 */
 
-/*Gracias al uso combinado de grow y basis puedo distribuir equitativamente el tamaño*/
 /*
-.caja {
-  flex-grow: 1;/
-}
+La propiedad flex-basis me permite establecer el tamaño de la caja.
+*/
 
+/*
 .red {
   flex-basis: 100%;
 }
@@ -60,21 +70,33 @@
 }
 */
 
-/* #layout {
+/*
+
+Alineado horizontal
+
+#layout {
+  flex-flow: row wrap;
   justify-content: flex-start;
   justify-content: left;
+  justify-content: center;
   justify-content: flex-end;
   justify-content: right;
   justify-content: space-between;
   justify-content: space-around;
   justify-content: space-evenly;
-} */
+}
+*/
 
-/* #layout {
-  justify-content: space-evenly;
+/*
+
+Alineado vertical
+
+#layout {
   height: 700px;
+  flex-flow: row wrap;
+  align-items: flex-start;
   align-items: baseline;
   align-items: center;
-  align-items: flex-start;
   align-items: flex-end;
-} */
+}
+*/

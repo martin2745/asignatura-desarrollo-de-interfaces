@@ -30,7 +30,7 @@ En Flexbox, hay dos conceptos principales:
 Estas propiedades se aplican al contenedor y afectan a todos sus ítems:
 
 - `display: flex;`: El contenedor padre se declara como flexible ocupando el 100% del ancho.
-- `display: flex;`: El contenedor padre se declara como flexible pero pasa a tener un ancho ajustado al tamaño de los elementos internos.
+- `display: inline-flex;`: El contenedor padre se declara como flexible pero pasa a tener un ancho ajustado al tamaño de los elementos internos.
 
 ### Direcciones en Flexbox
 
