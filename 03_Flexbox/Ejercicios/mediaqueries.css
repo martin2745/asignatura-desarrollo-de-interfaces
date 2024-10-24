@@ -1,0 +1,118 @@
+/* Media Queries para hacer el diseño responsivo */
+
+/* Ajustes para pantallas de tablets y menores a 1024px */
+@media (max-width: 1024px) {
+  #content {
+    flex-direction: column;
+    padding: 5vw 0;
+  }
+
+  aside {
+    margin-right: 2vw;
+  }
+
+  aside h2 {
+    font-size: 2.2vw;
+  }
+
+  aside a {
+    font-size: 2vw;
+  }
+
+  #projects {
+    flex-basis: 100%;
+    margin-left: 2vw;
+  }
+
+  .project {
+    flex-basis: calc(33% - 1vw);
+    margin-bottom: 2vw;
+  }
+}
+
+/* Ajustes para pantallas de móviles y menores a 768px */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 12vw;
+  }
+
+  .logo {
+    text-align: center;
+    margin-top: 1vw;
+  }
+
+  .logo h1 {
+    font-size: 3.5vw;
+  }
+
+  #menu {
+    width: 100%;
+  }
+
+  #menu a {
+    font-size: 2.5vw;
+  }
+
+  #content {
+    padding: 3vw;
+  }
+
+  aside {
+    padding-bottom: 2vw;
+  }
+
+  .project-info a {
+    font-size: 2vw;
+  }
+
+  .project-info p {
+    font-size: 2vw;
+  }
+
+  footer .info {
+    font-size: 2vw;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas y menores a 480px */
+@media (max-width: 480px) {
+  header {
+    height: 15vw;
+  }
+
+  .logo {
+    margin-top: 2vw;
+  }
+
+  .logo h1 {
+    font-size: 5vw;
+  }
+
+  aside h2 {
+    font-size: 4vw;
+  }
+
+  aside a {
+    font-size: 3vw;
+    padding: 3vw;
+  }
+
+  .project {
+    flex-basis: 100%;
+    margin-bottom: 2vw;
+  }
+
+  .project-info a {
+    font-size: 3vw;
+  }
+
+  .project-info p {
+    font-size: 3vw;
+  }
+
+  footer .info {
+    font-size: 3vw;
+  }
+}
