@@ -2,7 +2,7 @@
 body {
     background-image: url("./../img/paven.png");
     background-repeat: repeat;
-    min-width: 380px;
+    min-width: 480px;
 }
 
 * {
@@ -11,11 +11,6 @@ body {
     list-style: none;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.clearfix {
-    float: none;
-    clear: both;
 }
 
 /*Estilos enlaces*/
@@ -30,12 +25,13 @@ a:hover {
 /*Header*/
 header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header #logotipo {
-    display: flex;
-    justify-content: center;
-    
+    width: fit-content;
 }
 
 header #logotipo img {
@@ -43,26 +39,33 @@ header #logotipo img {
 }
 
 header h1 {
+    width: fit-content;
     text-align: center;
     font-size: 40px;
     color: #70b231;
     text-shadow: 0px 2px 4px #333333;
     margin-bottom: 15px;
+    padding: 0 10px;
 }
 
 /*Menu*/
 nav {
     width: 100%;
     background-color: #333;
-    height: 40px;
+    height: auto;
     box-shadow: 0px 0px 2px grey;
 }
 
+nav .menu-hamburguesa {
+    display: none;
+}
+
 nav ul {
-    width: 1130px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -93,7 +96,8 @@ nav ul li:hover a {
 
 /*Contenido principal*/
 #content {
-    width: 1250px;
+    width: 80%;
+    max-width: 1200px;
     min-height: 1100px;
     margin: 0 auto;
     margin-top: 40px;
@@ -102,15 +106,18 @@ nav ul li:hover a {
 }
 
 #content #aside {
-    width: 200px;
+    /* width: 200px; */
+    flex-basis: 20%;
     background-color: white;
     border: 1px solid #CCC;
     box-shadow: 0px 2px 2px #CCC;
     height: fit-content;
+    margin-right: 20px;
 }
 
 #content #aside .widget {
-    width: 180px;
+    width: 100%;
+    box-sizing: border-box;
     border-bottom: 1px dashed gray;
     padding: 10px;
 }
@@ -168,7 +175,7 @@ nav ul li:hover a {
 
 /*Secciones*/
 #sections {
-    width: 78%;
+    flex-basis: 75%;
 }
 
 #sections section {
@@ -222,38 +229,25 @@ footer {
     padding: 10px 0;
 }
 
+
 /*Responsive*/
-/*Entre 870px y 1330px*/
-@media screen and (max-width: 1330px) {
-
-    
-    nav {
-        
-        height: auto;
-        
-    }
-    
-    nav ul {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    
-
+/*Entre 768px y 1024px*/
+@media screen and (max-width: 1024px) {
     #content {
-        width: 800px;
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
 
     #content #aside {
-        width: fit-content;
+        width: 100%;
+        box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
         margin-bottom: 40px;
+        margin-right: 0;
     }
 
     #content #aside .widget {
-        width: 180px;
         border-bottom: none;
         border-right: 1px dashed gray;
         padding: 10px;
@@ -268,26 +262,26 @@ footer {
     }
 }
 
-/*Para maximo 870px*/
-@media screen and (max-width: 870px) {
+/*Para maximo 480 y 768px*/
+@media screen and (max-width: 768px) {
 
     #content {
-        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     #content #aside {
-        width: fit-content;
-        min-width: 380px;
+        width: 100%;
+        max-width: 480px;
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
     }
 
     #content #aside .widget {
-        width: 95%;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     #content #aside .widget{
@@ -297,6 +291,31 @@ footer {
 
     #sections {
         width: 100%;
-        min-width: 380px;
     }
+}
+
+/*Mostrar icono de menu hamburguesa*/
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-hamburguesa {
+        display: block;
+        font-size: 30px;
+        color: white;
+        padding: 5px;
+        border: unset;
+        background-color: unset;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    nav .menu-hamburguesa:hover {
+        background-color: #70b231;
+    }
+    
 }
