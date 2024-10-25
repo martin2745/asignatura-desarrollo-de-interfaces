@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-top: 1vw;
+  }
+
+  #navContainer nav,
+  #content {
+    flex-direction: column;
+  }
+
+  #leftColumn,
+  #destinationsArea {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2vw;
+  }
+
+  #leftColumn .leftBlock,
+  .destination {
+    width: 47%;
+    margin-bottom: 2vw;
+  }
+
+  .destinationPicture{
+    height: 40vw;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  #navContainer{
+    width: 100%;
+    background-color: black;
+  }
+
+  header button,
+  header i {
+      background-color: transparent;
+      border: none;
+      color: #e6e6e6;
+      text-transform: uppercase;
+  }
+
+  #navContainer nav{
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #navContainer nav > a {
+    font-size: 4vw;
+  }
+
+  #subHeader {
+    font-size: 3.5vw;
+  }
+
+  header button {
+    display: block;
+  }
+  
+  #horizontalMenu{
+    display:none;
+  }
+
+  #leftColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #leftColumn .leftBlock{
+    width: 100%;
+  }
+
+  .leftBlock h3 {
+    font-size: 3.5vw;
+  }
+
+  .leftBlock input, .leftBlock select {
+    font-size: 2.5vw;
+  }
+
+  .leftBlock .fullStar, .leftBlock .emptyStar {
+    font-size: 3.5vw;
+  }
+
+  #destinationsArea{
+    width: 95%;
+    justify-content: center;
+  }
+
+  .destination{
+    width: 80%;
+    height: 70%;
+  }
+
+  .destinationInfo a {
+    font-size: 3.5vw;
+  }
+
+  .destinationInfo .fullStar, .destinationInfo .emptyStar,
+  .destinationInfo span,  span.price{
+    font-size: 2.5vw;
+  }
+
+  .destinationContent > p , .destinationFooter > span, .greenButton{
+    font-size: 3vw;
+  }
+
+  footer {
+    background-color: #333; /* Puedes ajustar el color de fondo según prefieras */
+    color: white;
+    height: 80vw;
+    padding: 20px;
+  }
+  
+  #footerContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footerContent > div{
+    flex-grow: 1;
+    width: 45%;
+  }
+  
+  #footerContent > div > h2 {
+    font-size: 3.5vw;
+  }
+
+  #footerContent > div > p,
+  #footerContent > div ul li a,
+  #footerContent > div ul li span{
+    font-size: 2.5vw;
+  }
+
+}

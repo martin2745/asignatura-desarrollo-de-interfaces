@@ -1,0 +1,535 @@
+/* Cargamos las fuentes locales */
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Icomoon;
+    src: url(fonts/icomoon/fonts/icomoon.ttf);
+}
+
+/* Definimos los iconos a usar*/
+i {
+    font-family: Icomoon;
+}
+
+i.hamburguer::before {
+    content: "\e9bd";
+}
+
+i.fullStar::before {
+    content: "\e9d9";
+}
+
+i.emptyStar::before {
+    content: "\e9d7";
+}
+
+i.map::before {
+    content: "\e94c";
+}
+
+i.twitter::before {
+    content: "\ea96";
+}
+
+i.facebook::before {
+    content: "\ea90";
+}
+
+i.instagram::before {
+    content: "\ea92";
+}
+
+i.mapMark::before {
+    content: "\e947";
+}
+
+i.phone::before {
+    content: "\e945";
+}
+
+i.envelop::before {
+    content: "\e942";
+}
+
+/* Para toda la página: Borramos cualquier estilo previo y escogemos la fuente*/
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 3vw;
+    font-style: normal;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+/* Estilo de encabezados */
+h1 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+/* Estilo de botones */
+
+.whiteBorder {
+    border: 1px solid white;
+    padding: 0.2vw 2vw;
+}
+
+.hoverRedBorder:hover {
+    border: 1px solid #F85959;
+    color: #F85959;
+    background-color: transparent;
+}
+
+.round {
+    border-radius: 1vw;
+}
+
+.rounded {
+    border-radius: 0.5vw;
+}
+
+.hoverRed:hover,
+.redButton {
+    background-color: #F85959;
+    border: 1px solid #F85959;
+    color: white;
+}
+
+.greenButton {
+    background-color: #8bc34a;
+    color: white;
+    padding: 0.2vw 2vw;
+}
+
+/* Destinos individuales */
+
+#parisPicture {
+    background-image: url(images/destination-1.jpg);
+}
+#londonPicture {
+    background-image: url(images/destination-3.jpg);
+}
+#californiaPicture {
+    background-image: url(images/destination-2.jpg);
+}
+#singapurPicture {
+    background-image: url(images/destination-4.jpg);
+}
+#sidneyPicture {
+    background-image: url(images/destination-5.jpg);
+}
+#kiotoPicture {
+    background-image: url(images/destination-6.jpg);
+}
+
+/* ESTILOS PARA VISTA MÓVIL */
+
+/* Cabecera */
+
+header {
+    background-image: url('images/bg_3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+}
+
+header * {
+    color: white;
+}
+
+#navContainer {
+    background-color: black;
+    height: 6vw;
+}
+
+header nav {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a.logo {
+    font-weight: bold;
+    width: 20%;
+}
+
+#horizontalMenu {
+    display: none;
+}
+
+header button,
+header i {
+    background-color: transparent;
+    border: none;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+#subHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vw;
+}
+
+
+/* Zona de contenido */
+
+#content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Barra lateral */
+#leftColumn {
+    width: 100%;
+}
+
+.leftBlock {
+    background-color: #f8faff;
+    border: 1px solid #e6e6e6;
+    margin-top: 4vw;
+    padding: 4vw;
+}
+
+.leftBlock h3 {
+    color: #717171;
+    text-transform: uppercase;
+}
+
+.leftBlock input,
+.leftBlock select {
+    width: 100%;
+    margin-bottom: 2vw;
+    accent-color: #f85959;
+    padding: 1vw;
+}
+
+.leftBlock .fullStar,
+.leftBlock .emptyStar {
+    color: #F85959;
+}
+
+.starsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.starsContainer input {
+    width: 10%;
+    margin: 0;
+}
+
+.starsContainer label {
+    width: 70%;
+}
+
+.starsContainer label p span {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Zona de destinos */
+
+#destinationsArea {
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 2vw;
+}
+
+.destinationContent {
+    padding: 2vw;
+}
+
+
+/* Cajas de destino */
+
+.destinationPicture {
+    background-position: center;
+    background-size: cover;
+    height: 60vw;
+}
+
+.destinationInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destinationInfo span {
+    font-size: small;
+}
+
+.destinationInfo i {
+    font-size: small;
+    color: #F85959;
+}
+
+span.price {
+    font-size: medium;
+    color: #2f89fc;
+}
+
+.destinationFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Zona de navegación entre páginas */
+
+#navPages {
+    width: 100%;
+}
+
+#navPages ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+#navPages li *{
+    border: 1px solid #f85959;
+    border-radius: 50%;
+    color: #f85959;
+    height: 5vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+#navPages li span {
+    background-color: #fdd3d3;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222831;
+    margin-top: 2vw;
+}
+
+footer * {
+    color: #ffffff;
+}
+
+#footerContent {
+    width: 70%;
+    margin: auto;
+    padding: 2vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footerContent > div {
+    width: 100%;
+}
+
+#footerContent ul {
+    padding: 0;
+}
+
+#socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#socialLinks li {
+    width: 6vw;
+    height: 6vw;
+    background-color: #e6e6e650;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerContent > div:nth-of-type(4) li:first-of-type,
+#footerContent > div:nth-of-type(4) li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerContent .text{
+    width: 85%;
+}
+
+
+/* Ancho de pantalla tablet */
+
+@media screen and (min-width:768px) {
+    * {
+        font-size: 1.8vw;
+    }
+
+    header {
+        height: 50vw;
+    }
+
+    #subHeader {
+        height: 44vw;
+    }
+
+    #navContainer {
+        background-color: transparent;
+    }
+
+    header button {
+        display: none;
+    }
+
+    #horizontalMenu {
+        display: block;
+        width: 75%;
+    }
+
+    #horizontalMenu ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #horizontalMenu li a {
+        font-size: 1.2vw;
+    }
+
+    #leftColumn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .leftBlock {
+        width: 48%;
+    }
+
+    .leftBlock input,
+    .leftBlock select {
+        padding: 0.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .starsContainer input {
+        margin: 0;
+    }
+
+    #destinationsArea {
+        width: 100%;
+    }
+
+    .destination {
+        width: 48%;
+    }
+
+    .destinationPicture {
+        height: 30vw;
+    }
+
+    #navPages li *{
+        width: 3vw;
+        height: 3vw;
+        font-size: 1.2vw;
+    }
+
+    #footerContent > div {
+        width: 45%;
+    }
+
+    #footerContent li {
+        line-height: 1.8;
+    }
+
+    #socialLinks li {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+}
+
+/* Ancho de pantalla escritorio */
+
+@media screen and (min-width:1024px) {
+    * {
+        font-size: 1.3vw;
+    }
+
+    #leftColumn {
+        width: 20%;
+        display: block;
+    }
+
+    .leftBlock {
+        margin-top: 2vw;
+        padding: 1vw;
+        width: 100%;
+    }
+
+    .leftBlock h3 {
+        font-size: 1.1vw;
+    }
+
+    .leftBlock input,
+    .leftBlock select {
+        font-size: 0.8vw;
+    }
+
+    #destinationsArea {
+        width: 75%;
+        margin-top: 2vw;
+    }
+
+    .destination {
+        width: 32%;
+    }
+
+    .destinationContent {
+        padding: 1vw;
+    }
+
+    .destinationPicture {
+        height: 20vw;
+    }
+
+    .destinationContent > p, 
+    .destinationContent > p > span, 
+    .destinationFooter > span {
+        font-size: 1vw;
+    }
+
+    .greenButton {
+        padding: 0.2vw 1vw;
+        font-size: 1vw;
+    }
+
+    #footerContent > div {
+        width: 22%;
+    }
+
+    #socialLinks li {
+        width: 3vw;
+        height: 3vw;
+    }
+}

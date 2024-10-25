@@ -1,0 +1,579 @@
+/* Fuentes */
+@font-face {
+  font-family: "Barlow";
+  src: local("Barlow"), url("fonts/Barlow/BarlowCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  font: 14px Montserrat;
+  min-width:490px;
+}
+/* Fondo de la zona 1 y 2 */
+body > div {
+  background: url('images/bg/bg-7.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+}
+/* Zona 1. Barra de navegación */
+nav#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 30px;
+}
+nav#navbar div {
+  width: 100%;
+  margin: auto;
+}
+nav#navbar > div > a {
+  display: inline-block;
+  width: 25%;
+  text-decoration: none;
+}
+nav#navbar h2 {
+  font: bold 36px Barlow;
+  color: #fff;
+  text-decoration: none;
+}
+nav#navbar h2 span {
+  color: rgb(245, 99, 75);
+}
+nav#navbar > div > div {
+  display: inline-block;
+  width: calc(75% - 4px);
+}
+nav#navbar ul {
+  display: inline-block;
+  width: calc(75% - 4px);
+  list-style-type: none;
+  text-align: center;
+  vertical-align: 7px;
+}
+nav#navbar ul li {
+  display: inline-block;
+  margin: 0 7px;
+}
+nav#navbar ul li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+nav#navbar ul li a:hover {
+  color: rgb(245, 99, 75);
+}
+nav#navbar > div > div > div {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  vertical-align: 4px;
+}
+nav#navbar > div > div > div a {
+  text-decoration: none;
+}
+nav#navbar > div > div > div a h3 {
+  font: bold 28px Barlow;
+  color: rgb(245, 99, 75);
+}
+nav#navbar > div > div > div a h3 i {
+  display: inline-block;
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+
+/* Zona 2 */
+.desafio {
+  background: rgba(0, 0, 0, 0.8);
+  padding-bottom: 190px;
+}
+.desafio > div {
+  padding-top: 100px;
+  width: 70%;
+  margin: auto;
+}
+.desafio div > span {
+  font: 2rem Barlow;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 1px solid #fff;
+  padding: 3px 10px;
+}
+.desafio > div h1 {
+  display: block;
+  width: 800px;
+  font: bold 100px Barlow;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.desafio > div h1 span {
+  color: rgb(245, 99, 75);
+}
+.desafio > div a {
+  display: inline-block;
+  font: 12px Montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ed6650, #ff8f16);
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 20px 30px;
+}
+.desafio > div i {
+  font-size: 8px;
+  margin-left: 10px;
+}
+
+/* Zona 3. Bloques de contenido centrados*/
+.bloques {
+  background: #fff;
+}
+.bloques > div {
+  width: 70%;
+  margin: auto;
+}
+.bloques > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.bloques > div > div > div {
+  width: calc(33% - 20px);
+  margin-top: -100px;
+  background: #fff;
+  border-radius: 5px;
+}
+.bloques > div > div > div:hover {
+  background: linear-gradient(to right, #ed6650, #ff8f16);
+}
+.bloques > div > div > div > div {
+  position: relative;
+  padding: 70px;
+}
+.bloques > div > div > div > div > span {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  color: #232323;
+  font: 120px Montserrat;
+  opacity: 0.1;
+}
+.bloques > div > div > div:hover > div > span {
+  color: #fff;
+}
+.bloques > div > div > div > div > h3 {
+  display: block;
+  width: 70%;
+  font: bold 28px Barlow;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.bloques > div > div > div:hover > div > h3 {
+  color: #fff;
+}
+.bloques > div > div > div > div > p {
+  display: block;
+  width: 85%;
+  font: 16px Montserrat;
+  color: #232323;
+  line-height: 30px;
+}
+.bloques > div > div > div:hover > div > p {
+  color: #fff;
+}
+.bloques > div > div > div > div > a {
+  display: block;
+  margin-top: 30px;
+  font: bold 12px Montserrat;
+  color: rgb(245, 99, 75);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.bloques > div > div > div:hover > div > a {
+  color: #fff;
+}
+.bloques > div > div > div > div > a i {
+  margin-right: 10px;
+}
+.bloques > div > div > div:hover > div > i {
+  color: #fff;
+}
+
+/* Zona 4. Servicios */
+.servicios {
+  margin-top: 100px;
+}
+.servicios > div {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.servicios > div > div > div > div > div {
+  width: 50px;
+  height: 5px;
+  margin: auto;
+  background: rgb(245, 99, 75);
+}
+.servicios > div > div > div > div > h2 {
+  font: bold 38px Barlow;
+  color: #232323;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+.servicios > div > div > div > div > p {
+  font: 16px Montserrat;
+  color: #232323;
+}
+.servicios > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.servicios > div > div:nth-child(2) > div {
+  display: block;
+  width: 20%;
+  margin-top: 100px;
+}
+.servicios > div > div:nth-child(2) > div h4 {
+  font: bold 24px Barlow;
+  color: #232323;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+.servicios > div > div:nth-child(2) > div p {
+  display: block;
+  font: 16px Montserrat;
+  color: #232323;
+  line-height: 30px;
+}
+
+/* Zona 5. Galería de imágenes */
+.galeria {
+  margin-top: 100px;
+}
+.galeria > div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.galeria > div > div > div > div > div {
+  width: 50px;
+  height: 5px;
+  margin: auto;
+  background: rgb(245, 99, 75);
+}
+.galeria > div > div > div > div > h2 {
+  font: bold 38px Barlow;
+  color: #232323;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+.galeria > div > div > div > div > p {
+  font: 16px Montserrat;
+  color: #232323;
+}
+.galeria > div:nth-child(2) > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.galeria > div:nth-child(2) > div > div {
+  display: block;
+  width: 25%;
+}
+.galeria > div:nth-child(2) > div > div a {
+  display: block;
+}
+.galeria > div:nth-child(2) > div > div img {
+  display: block;
+  width: 100%;
+}
+
+/* Zona 6. Cursos que se imparten */
+.cursos {
+  padding-top: 100px;
+  background: #f0f2f4;
+}
+.cursos > div {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.cursos > div > div:first-child > div > div > div {
+  width: 50px;
+  height: 5px;
+  margin: auto;
+  background: rgb(245, 99, 75);
+}
+.cursos > div > div:first-child > div > div > h2 {
+  font: bold 38px Barlow;
+  color: #232323;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+.cursos > div > div:first-child > div > div > p {
+  font: 16px Montserrat;
+  color: #232323;
+}
+.cursos > div > div:nth-child(2) {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.cursos > div > div:nth-child(2) > div {
+  display: block;
+  width: calc(25% - 20px);
+  margin-top: 100px;
+}
+.cursos > div > div:nth-child(2) > div > div > img {
+  display: block;
+  width: 100%;
+}
+.cursos > div > div:nth-child(2) > div > div > div {
+  padding: 25px;
+  background: #fff;
+  text-align: left;
+}
+.cursos > div > div:nth-child(2) > div > div > div > a {
+  display: block;
+  font: bold 24px Montserrat;
+  text-decoration: none;
+  color: #232323;
+  margin-bottom: 5px;
+}
+.cursos > div > div:nth-child(2) > div > div > div > p {
+  display: block;
+  font: 16px Montserrat;
+  color: #232323;
+  line-height: 30px;
+}
+.cursos > div > div:nth-child(3) > div > div > a {
+  display: inline-block;
+  font: 12px Montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ed6650, #ff8f16);
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 20px 30px;
+  margin: 50px 0 100px;
+}
+
+/* Zona 7. Pié de página */
+footer {
+  background: #181a23;
+  padding: 100px 0 20px;
+}
+footer > div {
+  width: 70%;
+  margin: auto;
+}
+footer > div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* los bloques 1 y 4 son más anchos que los 2 y 3 */
+footer > div > div:first-child > div:first-child, footer > div > div:first-child > div:nth-child(4) {
+  width: calc(32% - 30px);
+}
+footer > div > div:first-child > div:nth-child(2), footer > div > div:first-child > div:nth-child(3) {
+  width: calc(18% - 30px);
+}
+footer > div > div:first-child > div > h2 {
+  font: bold 38px Barlow;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+footer > div > div:first-child > div > p {
+  display: block;
+  font: 16px Montserrat;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+footer > div > div:first-child > div > div > h4 {
+  display: block;
+  font: bold 24px Barlow;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+footer > div > div:first-child > div > div > div > a {
+  display: block;
+  font: 14px Montserrat;
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+footer > div > div:first-child > div > div > div > p {
+  display: block;
+  font: 14px Montserrat;
+  color: #595b65;
+  text-decoration: none;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+footer > div > div:first-child > div > div > ul {
+  list-style-type: none;
+}
+footer > div > div:first-child > div > div > ul > li {
+  margin-bottom: 20px;
+}
+footer > div > div:first-child > div > div > ul > li > a {
+  display: block;
+  font: 14px Montserrat;
+  color: #fff;
+  text-decoration: none;
+}
+footer > div > div:first-child > div > div > ul > li > a > i {
+  margin-right: 10px;
+}
+footer > div > div:first-child > div > div > p {
+  display: block;
+  font: 14px Montserrat;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer > div > div:first-child > div > div > span {
+  display: block;
+  font: 14px Montserrat;
+  color: #fff;
+  line-height: 25px;
+}
+/* zona fondo negro con iconos redes sociales en blanco */
+footer > div > div:last-child {
+  width: 70%;
+  margin: 50px auto;
+  background: #000;
+  padding: 20px 30px;
+}
+footer > div > div:last-child p {
+  font: bold 16px Montserrat;
+  color: #595b65;
+}
+footer > div > div:last-child ul {
+  float: right;
+  list-style-type: none;
+  margin-top: -15px;
+}
+footer > div > div:last-child ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+footer > div > div:last-child ul li a {
+  display: block;
+  font-size: 18px;
+  color: #595b65;
+  text-decoration: none;
+}
+footer > div > div:last-child ul li a:hover {
+  color: #fff;
+}
+
+/** Responsive tablet **/
+@media screen and (max-width: 992px) {
+	.desafio > div h1 {
+		font-size:5rem;
+	}
+    .bloques > div > div{
+		 flex-wrap: wrap;
+	}
+	.bloques > div > div > div {
+		  width: calc(48% - 20px);
+		
+		}
+	.servicios > div > div:nth-child(2) {
+	   flex-wrap: wrap;
+	}
+    .servicios > div > div:nth-child(2) > div {
+	
+	  width: calc(48% - 20px);
+	 
+    }
+	.cursos > div > div:nth-child(2) {
+	   flex-wrap: wrap;
+	}
+   .cursos > div > div:nth-child(2) > div {
+	
+	  width: calc(48% - 20px);
+	 
+   }
+    footer > div > div:first-child > div:first-child, footer > div > div:first-child > div:nth-child(4) {
+		width: calc(64% - 20px);
+	}
+	footer > div > div:first-child > div:nth-child(2), footer > div > div:first-child > div:nth-child(3) {
+		width: calc(32% - 20px);
+	}
+}
+
+/** Responsive móvil **/
+@media screen and (max-width: 768px) {
+	nav#navbar > div > div {
+		  display: none;
+		 /* se oculta cuando se muestra la vista móvil */ 
+	}
+	.desafio > div h1 {
+		font-size:2rem;
+	}
+	.bloques > div > div{
+		display: block;
+	}	
+	.bloques > div > div > div {
+		  width: calc(100% - 20px);
+
+		}
+	.servicios > div > div:nth-child(2) {
+	  display: block;
+	}
+	.servicios div > div > div, .servicios div > div > div > div{
+		  width: calc(100% - 20px);
+		}
+	.galeria > div:nth-child(2) > div {
+		  display: block;
+	}
+	.galeria > div:nth-child(2) > div > div {
+	  display: block;
+	  width: 100%;
+	}
+	.cursos > div > div:nth-child(2) {
+	  display: block;
+	}
+   .cursos > div > div:nth-child(2) > div {
+	  display: block;
+	  width: calc(100% - 20px);
+	 
+   }
+   footer > div {
+		width: 100%;
+	}
+   footer > div > div:first-child {
+	 display: block;
+	}
+   footer > div > div:first-child > div {
+	 width: calc(100% - 20px);
+	}
+
+}
