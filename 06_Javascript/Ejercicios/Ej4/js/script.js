@@ -25,6 +25,10 @@ for (const fruta of array) {
     console.log(fruta);
 }
 
+for (const letra of array[0]) {
+    console.log(letra);
+}
+
 // Ejemplo de bucle for...in para operar sobre un objeto
 const persona = {
     nombre: "Juan",
@@ -65,3 +69,14 @@ console.log(cuadradoB(2));
 const numero = () => 2 + 1;
 console.log(numero());
 
+// Función con múltiples parámetros
+let resultado = 0;
+
+const sumaTodos = (...numeros) => {
+    numeros.forEach(numero => {
+        resultado += numero;
+    });
+    console.log(resultado);
+}
+
+sumaTodos(1,2,3,4,5);
