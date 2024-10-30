@@ -78,17 +78,6 @@
 
 /* Ajustes para pantallas muy pequeñas y menores a 480px */
 @media (max-width: 480px) {
-  header {
-    height: 15vw;
-  }
-
-  .logo {
-    margin-top: 2vw;
-  }
-
-  .logo h1 {
-    font-size: 5vw;
-  }
 
   aside h2 {
     font-size: 4vw;
