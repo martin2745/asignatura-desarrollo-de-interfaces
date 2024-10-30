@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.layout {
+  border: 3px solid red;
+}
+
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+}
+
+.layout .red {
+  background: red;
+}
+
+.layout .blue {
+  background: blue;
+}
+
+.layout .green {
+  background: green;
+}
+
+.layout .pink {
+  background: pink;
+}
+
+.layout .yellow {
+  background: yellow;
+}
+
+.layout .cian {
+  background: #00ffff;
+}

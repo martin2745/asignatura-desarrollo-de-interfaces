@@ -38,7 +38,6 @@ footer .logo {
 }
 
 /*Responsive*/
-
 @media (max-width: 1500px) {
   header {
     grid-template-columns: 60% 35%;
