@@ -78,5 +78,36 @@ let seleccionarPorEtiquetaTodos = document.querySelectorAll("article");
 console.log(seleccionarPorEtiquetaTodos);
 
 seleccionarPorEtiquetaTodos.forEach((e, indice) => {
+  let identificador = "idArticulo_".concat(indice);
+  e.setAttribute("id", identificador);
   console.log("QuerySelectorAll:", e, "índice:", indice);
 });
+
+//////// BOM
+
+alert("¡Hola a todos!");
+let respuesta = prompt("¿Cómo estás?");
+let confirmacion = confirm("¿Te fue bien el día?");
+
+console.log(window);
+console.log("Ancho de la ventana", window.innerWidth);
+console.log("Alto de la venta", window.innerHeight);
+console.log("Sabemos si la ventana está abierta o cerrada", window.closed);
+console.log("DOM", window.document);
+console.log("Sabemos el navegador", window.navigator.userAgent);
+
+console.log("Objeto navigator", navigator);
+console.log("Conexión a internet", navigator.onLine);
+if(!navigator.onLine){
+  alert("No tienes conexión a Internet");
+}
+
+console.log("Objeto location", location);
+console.log("Dirección del navegador", location.href);
+// console.log("Recargar la página", location.reload());
+
+console.log("Objeto history", window.history);
+console.log("Página anterior en el historial");
+//window.history.back();
+console.log("Página siguiente en el historial");
+//window.history.forward()
