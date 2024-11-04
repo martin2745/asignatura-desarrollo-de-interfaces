@@ -8,7 +8,7 @@
 2. **`<html>`**:
 
    - Esta etiqueta es el contenedor principal que agrupa todo el contenido de un documento HTML.
-   - A menudo incluye el atributo `lang` para especificar el idioma de la página, por ejemplo: `<html lang="es">`.
+   - A menudo incluye el atributo `lang` para especificar el idioma de la página, por ejemplo: `<html >`.
 
 3. **`<head>`**:
    - Contiene información meta sobre la página (como el título, enlaces a archivos CSS, scripts de JavaScript, etc.) que no se muestra directamente en el contenido visual de la página.
