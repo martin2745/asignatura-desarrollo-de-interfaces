@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Manzana Roja",
+    "description": "Manzana roja fresca y crujiente, ideal para meriendas o ensaladas.",
+    "price": 1.5,
+    "category": "Fruits"
+  },
+  {
+    "id": 2,
+    "name": "Pan Integral",
+    "description": "Pan integral horneado diariamente, perfecto para un desayuno saludable.",
+    "price": 2.0,
+    "category": "Bakery"
+  },
+  {
+    "id": 3,
+    "name": "Leche Descremada",
+    "description": "Leche de vaca descremada, rica en calcio y baja en grasa.",
+    "price": 1.2,
+    "category": "Dairy"
+  },
+  {
+    "id": 4,
+    "name": "Arroz Blanco",
+    "description": "Arroz blanco de grano largo, ideal para acompañar tus platos favoritos.",
+    "price": 1.8,
+    "category": "Grains"
+  },
+  {
+    "id": 5,
+    "name": "Jugo de Naranja",
+    "description": "Jugo de naranja natural, sin azúcares añadidos.",
+    "price": 3.0,
+    "category": "Beverages"
+  }
+]
