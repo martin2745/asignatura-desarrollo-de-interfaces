@@ -3,11 +3,17 @@
 
 let caja = document.getElementById("caja");
 console.log(caja);
-console.log(caja.innerHTML);
-console.log(caja.innerText);
+console.log(caja.innerHTML); //Contenido HTML:  <h1>Cajitas</h1>
+console.log(caja.innerText); //contenido de texto:  Cajitas
 
 caja.innerText = "Cajas de Martín";
-caja.innerHTML = "<h1>Cajas de Martín</h1>";
+caja.innerHTML = `
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+`;
 
 // Modificaciones de estilos
 // caja.style.background = "red";
@@ -19,6 +25,7 @@ caja.classList.add("cajita");
 caja.classList.add("noExiste");
 
 console.log(caja.classList);
+console.log(Array.from(caja.classList));
 console.log(caja.classList[1]);
 
 caja.classList.forEach((e) => {
@@ -28,6 +35,7 @@ caja.classList.forEach((e) => {
 //////// getElementsByClassName()
 let articulos = document.getElementsByClassName("articulo");
 console.log(articulos);
+console.log(Array.from(articulos));
 console.log(articulos[0]);
 
 for (let e of articulos) {
@@ -37,13 +45,29 @@ for (let e of articulos) {
 
 let articulosArray = Array.from(articulos); //Hay que convertir a array el HTMLCollection
 
+// foreach es un iterador para arrays por lo que tengo que convertirlo a array para iterarlo
 articulosArray.forEach((e) => {
   console.log("Artículo por clase:", e);
   e.style.background = "green";
 
-  e.innerHTML += "<a href='#'>enlace</a>";
+  e.innerHTML += "<a href='#'>enlace</a>"; //Añado más contenido HTML
+
   let h3 = document.createElement("h3");
+
+  /*
+  La función document.createElement("h3") crea un nuevo elemento <h3> vacío,
+  pero aún no se ha insertado en el DOM. Solo se ha creado en la memoria para
+  poder manipularlo.
+  */
+
   let texto = document.createTextNode("Subtítulo");
+
+  /*
+  La función document.createTextNode("Subtítulo") crea un nodo de texto que
+  contiene la palabra "Subtítulo". Este nodo no tiene una etiqueta como <h3>,
+  <p>, etc., ya que es solo un texto plano.
+  */
+
   h3.append(texto);
   e.append(h3);
 });
@@ -74,6 +98,7 @@ let seleccionarPorClaseTodos = document.querySelectorAll(
   "#articulos .articulo"
 );
 console.log(seleccionarPorClaseTodos);
+console.log(Array.from(seleccionarPorClaseTodos));
 
 let seleccionarPorEtiquetaTodos = document.querySelectorAll("article");
 console.log(seleccionarPorEtiquetaTodos);
@@ -99,7 +124,7 @@ console.log("Sabemos el navegador", window.navigator.userAgent);
 
 console.log("Objeto navigator", navigator);
 console.log("Conexión a internet", navigator.onLine);
-if(!navigator.onLine){
+if (!navigator.onLine) {
   alert("No tienes conexión a Internet");
 }
 
