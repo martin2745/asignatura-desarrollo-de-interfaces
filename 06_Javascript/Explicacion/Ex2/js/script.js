@@ -1,3 +1,4 @@
+// 8. DOM
 //////// getElementById()
 
 let caja = document.getElementById("caja");
@@ -83,7 +84,7 @@ seleccionarPorEtiquetaTodos.forEach((e, indice) => {
   console.log("QuerySelectorAll:", e, "índice:", indice);
 });
 
-//////// BOM
+// 9. BOM
 
 alert("¡Hola a todos!");
 let respuesta = prompt("¿Cómo estás?");

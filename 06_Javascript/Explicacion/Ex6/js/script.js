@@ -1,3 +1,6 @@
+// 14. Asincronía en JavaScript
+// 15. Promesas y Peticiones fetch y AJAX
+
 // Promesas
 
 /*const eventoFuturo = (res) => {

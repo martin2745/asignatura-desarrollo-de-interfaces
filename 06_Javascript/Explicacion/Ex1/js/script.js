@@ -32,8 +32,8 @@ console.log("Tipo de conocimientos:", typeof conocimientos);// object
 console.log("Tipo de persona:", typeof persona);            // object
 console.log("Tipo de booleano:", typeof booleano);          // boolean
 console.log("Tipo de indefinido:", typeof indefinido);      // undefined
-console.log("Tipo de nulo:", typeof nulo);                  // null
-console.log(resultado);                                     // NaN Representar un valor que no es un número válido en una operación matemática
+console.log("Valor de nulo:", nulo);                        // null
+console.log("Valor de resultado", resultado);               // NaN Representar un valor que no es un número válido en una operación matemática
 
 console.log(`Hola soy ${nombre}, tengo ${edad} años y vivo en ${pais}`);
 
@@ -181,3 +181,80 @@ console.log(subArray);
 
 console.log(todasLasFrutas.join(", "));
 console.log(todasLasFrutas.reverse());
+
+//recorrido de array
+console.warn("Recorrido de array");
+for(let i = 0; i < todasLasFrutas.length; i++){
+    console.log(`Posición ${i}: ${todasLasFrutas[i]}`);
+}
+
+for(let i in todasLasFrutas){
+    console.log(`Posición ${i}: ${todasLasFrutas[i]}`);
+}
+
+for(let fruta of todasLasFrutas){
+    console.log(fruta);
+}
+
+/*
+foreach: Itera los elementos de array y no devuelve nada.
+map: Aplica una función sobre cada elemento del array devolviendolo.
+*/
+todasLasFrutas.forEach((fruta) => {
+    console.log(fruta);
+});
+
+todasLasFrutas.forEach((fruta, i) => {
+    console.log(`Posición ${i}: ${fruta.toUpperCase()}`);
+});
+
+let frutasMayusculas = todasLasFrutas.map((fruta, i) => {
+    console.log(`Posición ${i}: ${fruta.toUpperCase()}`);
+    return fruta.toUpperCase();
+});
+
+console.log(frutasMayusculas);
+
+// 5.Operadores
+// 6. Estructuras de Control
+console.warn("Estructuras de control");
+
+let valor1 = "0";
+let valor2 = 0;
+
+if (valor1 === valor2) {
+    console.log("valor1 y valor2 son estrictamente iguales en contenido y tipo");
+} else if (valor1 == valor2) {
+    console.log("valor1 y valor2 son iguales en valor, pero no en tipo");
+} else {
+    console.log("Ninguna condición se cumplió");
+}
+
+// 7. Funciones
+console.warn("Funciones");
+
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+console.log(saludar("Martín"));
+
+function saludarAnonimo(nombre = "Anónimo") {
+    return `Hola, ${nombre}!`;
+}
+console.log(saludarAnonimo());
+
+// Función anónima asignada a una variable
+const saludarFlecha = (nombre = "Anónimo") => {
+    return `Hola, ${nombre}!`;
+}
+
+console.log(saludarFlecha("Marcos"));
+
+//rest
+const saludarVarios = (...nombres) => {
+    nombres.forEach(nombre => {
+        console.log(`Hola, ${nombre}!`);
+    })
+}
+
+saludarVarios("Mateo", "Juan", "María");

@@ -1,3 +1,6 @@
+// 14. Asincronía en JavaScript
+// 15. Promesas y Peticiones fetch y AJAX
+
 const url_usuarios = "https://jsonplaceholder.typicode.com/users";
 const url_pokemon = "https://pokeapi.co/api/v2/pokemon";
 const url_productos = "./js/productos.json";

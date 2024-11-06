@@ -1,3 +1,5 @@
+// 13. Cookies, sessionStorage y localStorage en JavaScript
+
 // local
 
 let crear_local = () => {

@@ -1,3 +1,5 @@
+// 12. Objetos en JavaScript y JSON
+
 // Objetos literales
 // Es una estructura de datos que agrupa propiedades y métodos bajo un
 // mismo nombre.

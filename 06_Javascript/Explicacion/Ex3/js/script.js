@@ -1,4 +1,4 @@
-//////// Evento
+// 10. Eventos en JavaScript
 
 //////// click
 let boton = document.querySelector("#boton");
