@@ -92,15 +92,15 @@ let cadenaNoValida = "texto";
 
 // Usando parseInt() para convertir a entero
 let entero = parseInt(cadenaEntera);
-console.log(entero);  // 10
+console.log(typeof entero, entero);  // 10
 
 // Usando parseFloat() para convertir a decimal
 let decimal = parseFloat(cadenaDecimal);
-console.log(decimal);  // 3.14159
+console.log(typeof decimal, decimal);  // 3.14159
 
 // Usando Number() para convertir a número
 numero = Number(cadenaEntera);
-console.log(numero);  // 10 (como número)
+console.log(typeof numero, numero);  // 10 (como número)
 
 // Intentando parsear una cadena no numérica
 let invalido = parseInt(cadenaNoValida);
@@ -116,19 +116,19 @@ console.log("MAYÚSCULAS", mensaje.toUpperCase);
 
 numero = 12345;
 let texto = String(numero);  // Convierte el número a string
-console.log(texto, typeof texto);  // "12345" "string"
+console.log(typeof texto, texto);  // "12345" "string"
 
 booleano = true;
 let textoBooleano = String(booleano);  // Convierte el booleano a string
-console.log(textoBooleano, typeof textoBooleano);  // "true" "string"
+console.log(typeof textoBooleano, textoBooleano);  // "true" "string"
 
 let objeto = { name: "Maria", age: 28 };
 let textoObjeto = JSON.stringify(objeto);  // Convierte el objeto a string JSON
-console.log(textoObjeto, typeof textoObjeto);  // '{"name":"Maria","age":28}' "string"
+console.log(typeof textoObjeto, textoObjeto);  // '{"name":"Maria","age":28}' "string"
 
 let arreglo = [1, 2, 3, 4];
 let textoArreglo = arreglo.toString();  // Convierte el array a string
-console.log(textoArreglo, typeof textoArreglo);  // "1,2,3,4" (elementos separados por coma) "string"
+console.log(typeof textoArreglo, textoArreglo);  // "1,2,3,4" (elementos separados por coma) "string"
 
 // Objeto Date
 console.warn("Fechas");
