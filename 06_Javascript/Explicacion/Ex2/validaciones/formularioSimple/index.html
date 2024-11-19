@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="comun.js" defer></script>
+    <script type="text/javascript" src="validarCita.js" defer></script>
+    <title>Validación de formulario</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Validación de formulario</h2>
+      <form
+        name="formulario"
+        id="formulario"
+        action="respuesta.html"
+        method="get"
+      >
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <div id="error-nombre" class="error-message"></div>
+
+        <label for="dni">Dni:</label>
+        <input type="text" name="dni" id="dni" />
+        <div id="error-dni" class="error-message"></div>
+
+        <input type="submit" id="submit" name="enviar" value="Reservar Cita" />
+        <input
+          type="button"
+          id="limpiar"
+          name="limpiar"
+          value="Limpiar Datos"
+        />
+      </form>
+    </div>
+  </body>
+</html>

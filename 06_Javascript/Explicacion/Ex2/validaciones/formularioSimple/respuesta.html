@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Respuesta</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Detalles de la Reserva</h2>
+      <div>
+        <p><strong>Nombre:</strong> <span id="resp-nombre"></span></p>
+        <p><strong>DNI:</strong> <span id="resp-dni"></span></p>
+        <a href="index.html">Volver al Formulario</a>
+      </div>
+    </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+
+      document.getElementById("resp-nombre").textContent =
+        urlParams.get("nombre") || "No especificado";
+      document.getElementById("resp-dni").textContent =
+        urlParams.get("dni") || "No especificado";
+    </script>
+  </body>
+</html>
