@@ -73,7 +73,7 @@ articulosArray.forEach((e) => {
 });
 
 //////// getElementsByTagName
-let articulosEtiqueta = document.getElementsByClassName("article");
+let articulosEtiqueta = document.getElementsByTagName("article");
 console.log(articulos);
 console.log(articulos[0]);
 
