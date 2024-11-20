@@ -23,9 +23,9 @@ cajaTexto.addEventListener("mouseover", (event) => {
   console.log(event);
 });
 
-cajaTexto.addEventListener("mousemove", (event) => {
-  console.log("Me muevo en el textarea.");
-});
+// cajaTexto.addEventListener("mousemove", (event) => {
+//   console.log("Me muevo en el textarea.");
+// });
 
 cajaTexto.addEventListener("mouseout", (event) => {
   alert("Saliste del textarea.");
@@ -43,9 +43,9 @@ campoTexto.addEventListener("keyup", (event) => {
   console.warn("Soltaste la tecla:", event.key);
 });
 
-campoTexto.addEventListener("keypress", (event) => {
-  console.error("Mantienes la tecla:", event.key);
-});
+// campoTexto.addEventListener("keypress", (event) => {
+//   console.error("Mantienes la tecla:", event.key);
+// });
 
 //////// formulario
 let formulario = document.querySelector("#formulario");

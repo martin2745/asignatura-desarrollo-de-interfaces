@@ -45,7 +45,7 @@ const validarLetraDni = (dni) => {
 
 let ocultarElementos = ["error-nombre", "error-dni"];
 
-const validar = () => {
+const validar = (event) => {
   // Ocultar todos los mensajes de error antes de validar
   let esValido = validarNombre() && validarDni();
 

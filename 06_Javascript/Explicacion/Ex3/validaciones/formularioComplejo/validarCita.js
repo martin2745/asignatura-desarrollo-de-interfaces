@@ -110,7 +110,7 @@ let ocultarElementos = [
   "error-motivo",
 ];
 
-const validar = () => {
+const validar = (event) => {
   // Ocultar todos los mensajes de error antes de validar
   let esValido =
     validarNombre() &&
