@@ -75,8 +75,4 @@ const actualizarNumerito = () => {
     localStorage.setItem("numero-carrito", elementosEnCarrito);
 }
 
-const cargarNumerito = () => {
-    numerito.innerText = elementosEnCarrito;
-}
-
 cargarNumerito();

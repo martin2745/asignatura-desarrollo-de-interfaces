@@ -6,10 +6,6 @@ let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")
 let elementosEnCarrito = Number(localStorage.getItem("numero-carrito")) || 0;
 let numerito = document.querySelector("#numerito");
 
-const cargarNumerito = () => {
-    numerito.innerText = elementosEnCarrito;
-}
-
 const calcularTotal = () => {
     return productosEnCarrito.reduce((total, producto) => {
         return total + producto.precio * producto.cantidad;
@@ -20,7 +16,6 @@ const comprarProductoPorId = (id) => {
     if(confirm("¿Quieres comprar el producto?")){
         let productoEliminar = productosEnCarrito.find(producto => producto.id === id);
         productosEnCarrito = productosEnCarrito.filter(producto => producto.id !== id);
-        console.log(productosEnCarrito);
         localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
         document.getElementById(id).style.display = "none";
         localStorage.setItem("numero-carrito", elementosEnCarrito - productoEliminar.cantidad);
@@ -36,7 +31,6 @@ const eliminarProductoPorId = (id) => {
     if(confirm("¿Quieres eliminar el producto?")){
         let productoEliminar = productosEnCarrito.find(producto => producto.id === id);
         productosEnCarrito = productosEnCarrito.filter(producto => producto.id !== id);
-        console.log(productosEnCarrito);
         localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
         document.getElementById(id).style.display = "none";
         localStorage.setItem("numero-carrito", elementosEnCarrito - productoEliminar.cantidad);
