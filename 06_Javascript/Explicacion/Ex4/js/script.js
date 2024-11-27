@@ -19,7 +19,7 @@ let pelicula = {
   mostrarElenco: () => {
     console.log("Elenco de actores");
     pelicula.elenco.forEach(nombre => {
-      console.log(nombre);
+      console.log("Nombre del actor:", nombre);
     })
   },
   detalles: {
@@ -35,18 +35,21 @@ pelicula.director = "Martín Gil";
 console.log(pelicula.director);
 pelicula.secuela = "Terminator 2: El juicio final";
 console.log(pelicula.secuela);
-
-console.log(pelicula.descripcion());
-console.log(pelicula.descripcionDos());
-pelicula.mostrarElenco()
 console.log(pelicula.detalles);
 console.log(pelicula.detalles.duracion);
 delete pelicula.detalles;
 console.log(pelicula.detalles);
 
+
+console.log(pelicula.descripcion()); //Con this accedo al propio objeto en el que estoy
+console.log(pelicula.descripcionDos());
+pelicula.mostrarElenco()
+
+console.log(pelicula);
+
 // Objeto JSON
 // JSON = Javascript object notation
-// JSON no permiten funciones a diferencia de los objetos y solo permiten tipos primitivos de datos.
+// JSON no permiten funciones a diferencia de los objetos y solo permiten tipos primitivos de datos: números, string, booleanos...
 
 let palaPadel = {
   nombre: "Metalbone",
@@ -58,9 +61,9 @@ let palaPadel = {
 };
 
 console.log(palaPadel);
-let palaDePadelJSON = JSON.stringify(palaPadel); //Conversión de objeto JavaScript a JSON String
+let palaDePadelJSON = JSON.stringify(palaPadel); //Conversión de objeto JavaScript a JSON String para la comunicación con otro servicio y envío de datos
 console.log(palaDePadelJSON);
-let objetoConvertido = JSON.parse(palaDePadelJSON); //Conversión de objeto JSON String a JavaScript
+let objetoConvertido = JSON.parse(palaDePadelJSON); //Conversión de objeto JSON String a JavaScript para usarlo como un objeto literal de JS
 
 let caja = document.querySelector("#datos");
 console.log("recorrido de JSON u objeto");
@@ -68,3 +71,19 @@ for(let clave in palaPadel){
   console.log(clave, ":", palaPadel[clave]);
   caja.innerHTML += `<p>${clave}: ${palaPadel[clave]}</p>`;
 }
+
+// Usando Object.entries para obtener claves y valores
+Object.entries(palaPadel).forEach(([clave, valor]) => {
+  console.log(`${clave}: ${valor}`);
+});
+
+// Usando Object.values para obtener valores
+Object.values(palaPadel).forEach((valor) => {
+  console.log(valor);
+});
+
+// Usando Object.keys para obtener claves
+Object.keys(palaPadel).forEach((clave) => {
+  console.log(clave);
+  console.log(palaPadel[clave]);
+});
