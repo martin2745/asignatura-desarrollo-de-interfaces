@@ -34,7 +34,7 @@ const errores = (mensaje, id) => {
 
 // Patrones
 let patronNombre = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-let patronDni = /^[0-9]{8}[A-Z]$/i;
+const patronPassword = /^[a-zA-Z0-9·.$%&/()]{8,16}$/;
 
 // Función de cargar número de elementos en carrito
 const cargarNumerito = () => {

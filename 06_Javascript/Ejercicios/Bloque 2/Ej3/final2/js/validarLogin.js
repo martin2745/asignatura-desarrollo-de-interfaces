@@ -16,39 +16,30 @@ const validarNombre = () => {
   return true;
 };
 
-const validarDni = () => {
-  ocultarAviso("error-dni");
-  let dni = document.getElementById("dni");
+const validarPassword = () => {
+  ocultarAviso("error-password");
+  let password = document.getElementById("password");
 
-  if (!dni.value) {
-    errores("DNI obligatorio.", "error-dni");
+  if (!password.value) {
+    errores("La contraseña es obligatoria.", "error-password");
     return false;
-  } else if (!patronDni.test(dni.value)) {
-    errores("DNI inválido. Formato incorrecto.", "error-dni");
-    return false;
-  } else if (!validarLetraDni(dni.value)) {
-    errores("DNI inválido. La letra no coincide.", "error-dni");
+  } else if (!patronPassword.test(password.value)) {
+    errores(
+      "La contraseña debe tener entre 8 y 16 caracteres y solo puede contener letras, números y los caracteres ·$%&/().",
+      "error-password"
+    );
     return false;
   }
 
   return true;
 };
 
-const validarLetraDni = (dni) => {
-  let letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-  let numero = dni.substring(0, 8);
-  let letra = dni.substring(8).toUpperCase();
-  let resto = numero % 23;
-
-  return letra === letras.charAt(resto);
-};
-
-let ocultarElementos = ["error-nombre", "error-dni"];
+let ocultarElementos = ["error-nombre", "error-password"];
 
 const validar = (event) => {
   event.preventDefault();
   // Ocultar todos los mensajes de error antes de validar
-  let esValido = validarNombre() && validarDni();
+  let esValido = validarNombre() && validarPassword();
 
   if (!esValido) {
     // Detiene el envío solo si hay errores
@@ -59,7 +50,7 @@ const validar = (event) => {
 };
 
 document.getElementById("nombre").addEventListener("blur", validarNombre);
-document.getElementById("dni").addEventListener("blur", validarDni);
+document.getElementById("password").addEventListener("blur", validarPassword);
 document.getElementById("formulario").addEventListener("submit", validar);
 document
   .getElementById("limpiar")

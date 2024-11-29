@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarbaShop</title>
+  <link rel="stylesheet" type="text/css" href="./css/comun.css" />
   <link rel="stylesheet" type="text/css" href="./css/login.css" />
   <script type="text/javascript" src="./js/comun.js" defer></script>
   <script type="text/javascript" src="./js/validarLogin.js" defer></script>
@@ -11,27 +12,21 @@
 
 <body>
   <div class="container">
-    <h2>Validación de formulario</h2>
-    <form
-      name="formulario"
-      id="formulario"
-    >
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" />
+    <h2>Login</h2>
+    <form name="formulario" id="formulario">
+      <input type="text" name="nombre" id="nombre" placeholder="Login"/>
       <div id="error-nombre" class="error-message"></div>
-
-      <label for="dni">Dni:</label>
-      <input type="text" name="dni" id="dni" />
-      <div id="error-dni" class="error-message"></div>
-
-      <input type="submit" id="submit" name="enviar" value="Reservar Cita" />
-      <input
-        type="button"
-        id="limpiar"
-        name="limpiar"
-        value="Limpiar Datos"
-      />
+    
+      <input type="password" name="password" id="password" placeholder="Contraseña"/>
+      <div id="error-password" class="error-message"></div>
+      <div id="botones">
+          <input type="submit" id="submit" name="enviar" value="Entrar a CarbaShop" />
+          <input type="button" id="limpiar" name="limpiar" value="Limpiar Datos" />
+      </div>
     </form>
   </div>
+  <footer>
+    <p class="texto-footer">Martín Gil Blanco 2024 &copy;</p>
+  </footer>
 </body>
 </html>
