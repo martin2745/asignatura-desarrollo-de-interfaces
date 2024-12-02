@@ -17,7 +17,8 @@ html {
 
 .container {
   width: 40rem;
-  margin: 20rem auto;
+  margin: 0 auto;
+  margin-top: 15rem;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +26,7 @@ html {
 }
 
 .container h2 {
+  color: var(--clr-main);
   margin-bottom: 1rem;
   text-align: center;
 }

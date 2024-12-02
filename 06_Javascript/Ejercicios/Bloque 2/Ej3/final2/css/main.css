@@ -2,7 +2,7 @@
 
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 4fr 1fr;
     background-color: var(--clr-main);
 }
 
@@ -23,6 +23,14 @@ aside{
 .logo{
     font-weight: 400;
     font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    transition: all 300ms;
+}
+
+.logo:hover{
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .menu{
@@ -47,9 +55,8 @@ aside{
 .boton-menu.active{
     background-color: var(--clr-white);
     color: var(--clr-main);
-    width: 100%;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    width: 90%;
+    border-radius: 1rem;
 }
 
 .bi-hand-index-thumb-fill, .bi-hand-index-thumb{
@@ -76,7 +83,7 @@ aside{
 main{
     background-color: var(--clr-white);
     margin: 1rem;
-    margin-left: 0;
+    margin-right: 0;
     border-radius: 2rem;
     padding: 3rem;
 }
@@ -88,7 +95,7 @@ main{
 
 .contenedor-productos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
 }
 

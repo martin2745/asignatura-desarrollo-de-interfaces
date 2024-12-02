@@ -7,7 +7,7 @@
             "nombre": "Móviles",
             "id": "moviles"
         },
-        "precio": 1000
+        "precio": 850
     },
     {
         "id": "movil-02",
@@ -17,7 +17,7 @@
             "nombre": "Móviles",
             "id": "moviles"
         },
-        "precio": 1000
+        "precio": 909
     },
     {
         "id": "movil-03",
@@ -27,7 +27,7 @@
             "nombre": "Móviles",
             "id": "moviles"
         },
-        "precio": 1000
+        "precio": 1249
     },
     {
         "id": "movil-04",
@@ -37,7 +37,7 @@
             "nombre": "Móviles",
             "id": "moviles"
         },
-        "precio": 1000
+        "precio": 349
     },
     {
         "id": "movil-05",
@@ -47,7 +47,7 @@
             "nombre": "Móviles",
             "id": "moviles"
         },
-        "precio": 1000
+        "precio": 450
     },
     {
         "id": "portatil-01",
@@ -57,7 +57,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 1250
     },
     {
         "id": "portatil-02",
@@ -67,7 +67,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 1100
     },
     {
         "id": "portatil-03",
@@ -77,7 +77,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 650
     },
     {
         "id": "portatil-04",
@@ -87,7 +87,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 450
     },
     {
         "id": "portatil-05",
@@ -97,7 +97,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 909
     },
     {
         "id": "portatil-06",
@@ -107,7 +107,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 899
     },
     {
         "id": "portatil-07",
@@ -117,7 +117,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 700
     },
     {
         "id": "portatil-08",
@@ -127,7 +127,7 @@
             "nombre": "Portatiles",
             "id": "portatiles"
         },
-        "precio": 1000
+        "precio": 400
     },
     {
         "id": "television-01",
@@ -137,7 +137,7 @@
             "nombre": "Televisiones",
             "id": "televisiones"
         },
-        "precio": 1000
+        "precio": 500
     },
     {
         "id": "television-02",
@@ -157,7 +157,7 @@
             "nombre": "Televisiones",
             "id": "televisiones"
         },
-        "precio": 1000
+        "precio": 700
     },
     {
         "id": "television-04",
@@ -167,7 +167,7 @@
             "nombre": "Televisiones",
             "id": "televisiones"
         },
-        "precio": 1000
+        "precio": 550
     },
     {
         "id": "television-05",
@@ -177,6 +177,6 @@
             "nombre": "Televisiones",
             "id": "televisiones"
         },
-        "precio": 1000
+        "precio": 1200
     }
 ]
