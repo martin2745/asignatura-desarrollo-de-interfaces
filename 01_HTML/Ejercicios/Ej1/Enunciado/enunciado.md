@@ -1,9 +1,6 @@
 # Ejercicio 1 de HTML y CSS
 
-### HTML básico
-
 1. **Página principal: `index.html`**
-
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
   - Un menú de navegación con enlaces a las tres páginas:
@@ -15,8 +12,7 @@
   - Una imagen de un perro con una altura de 200px (archivo `perro.jpg` en la carpeta `images`).
   - Un párrafo de texto simulado con "Lorem ipsum...".
 
-1. **Página de contenidos: `contenidos.html`**
-
+2. **Página de contenidos: `contenidos.html`**
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
   - El mismo menú de navegación que permita acceder a las tres páginas.
@@ -33,7 +29,6 @@
 | Imagen Perro | Imagen Oso | Imagen Caballito de mar | Imagen Gato |
 
 3. **Página de contacto: `contacto.html`**
-
 - Debe incluir lo siguiente:
   - Un encabezado principal (`<h1>`) que diga: "Mi primera web".
   - El mismo menú de navegación que permita acceder a las tres páginas.

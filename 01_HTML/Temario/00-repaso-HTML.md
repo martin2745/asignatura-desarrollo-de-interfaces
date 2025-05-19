@@ -1,15 +1,13 @@
-### Repaso de contenidos HTML
+# Repaso de contenidos HTML
 
-#### Etiquetas básicas de HTML
+## Etiquetas básicas de HTML
 
 1. **`<!DOCTYPE html>`**:
    - Declara el tipo de documento y la versión de HTML que se utilizará. En este caso, `HTML5`.
    - Ayuda a los navegadores a interpretar correctamente el contenido de la página.
 2. **`<html>`**:
-
    - Esta etiqueta es el contenedor principal que agrupa todo el contenido de un documento HTML.
    - A menudo incluye el atributo `lang` para especificar el idioma de la página, por ejemplo: `<html >`.
-
 3. **`<head>`**:
    - Contiene información meta sobre la página (como el título, enlaces a archivos CSS, scripts de JavaScript, etc.) que no se muestra directamente en el contenido visual de la página.
 4. **`<meta charset="utf-8"/>`**:
@@ -25,54 +23,32 @@
 9. **`<hr>`**:
    - Inserta una línea horizontal para separar secciones de contenido. También es un elemento vacío.
 10. **`<ol>`** (Lista ordenada):
-
     - Crea una lista cuyos elementos están numerados. Los elementos individuales de la lista se añaden con `<li>`.
-
 11. **`<ul>`** (Lista desordenada):
     - Crea una lista no numerada, usualmente representada con viñetas (bullets).
 12. **`<li>`** (Elemento de lista):
-
     - Define cada elemento dentro de una lista (ya sea ordenada o desordenada).
-
 13. **`<img>`**:
-
     - Inserta una imagen en la página. El atributo `src` especifica la ruta de la imagen y `alt` es el texto alternativo que se muestra si la imagen no se puede cargar.
     - Atributos adicionales: `width`, `height` para ajustar el tamaño de la imagen.
-
 14. **`<a>`** (Anchor/enlace):
-
     - Crea un hipervínculo hacia otra página o recurso. El atributo `href` define la URL de destino. También puede tener atributos como `target="_blank"` para abrir el enlace en una nueva pestaña.
-
 15. **`<table>`**:
-
-    - Crea una tabla. El atributo `border` añade un borde alrededor de la tabla. Dentro de la tabla, usamos `<tr>` para definir filas y `<td>` para las celdas.
-
+    - Crea una tabla. El atributo `border` añade un borde alrededor de la tabla. Dentro de la tabla, usamos `<tr>` para definir filas y `<td>` para las celdas. Tambien existe la etiqueta `<th>` para los elementos de la cabecera de la tabla. Por otra parte para cada dato existe el atributo `colspan` donde podemos indicar en números cuantos espacios de columna se quiere ocupar.
 16. **`<div>`**:
-
     - Es un contenedor genérico en bloque que se utiliza para agrupar elementos y aplicar estilos o scripts.
     - A menudo utilizado junto con CSS para crear estructuras y diseños complejos.
-
 17. **`<header>`**:
-
     - Define la sección de cabecera de un documento o una sección. A menudo contiene logotipos, títulos y menús de navegación.
-
 18. **`<nav>`**:
-
     - Indica un conjunto de enlaces de navegación. Normalmente, agrupa enlaces importantes dentro de la estructura del sitio, como menús o barras de navegación.
-
 19. **`<section>`**:
-
     - Crea una sección temática en la página. A menudo se usa para dividir el contenido en diferentes partes lógicas, y puede contener múltiples subetiquetas como `<article>` o `<div>`.
-
 20. **`<article>`**:
-
     - Representa un contenido independiente dentro de la página, como una publicación de blog, un artículo de noticias o un comentario.
     - Es reutilizable y generalmente tiene sentido por sí mismo fuera del contexto del documento.
-
 21. **`<aside>`**:
-
     - Define una sección que contiene contenido relacionado indirectamente con el contenido principal. Se usa comúnmente para barras laterales, enlaces adicionales o bloques de información.
-
 22. **`<footer>`**:
     - Crea el pie de página del documento o de una sección. Suele incluir información como derechos de autor, enlaces a términos legales o contacto.
 
@@ -91,10 +67,9 @@
 - **Formularios y etiquetas de control**:
   - HTML también proporciona etiquetas especiales para formularios como `<form>`, `<input>`, `<textarea>`, `<select>`, y `<button>` que permiten la interacción con los usuarios.
 
-#### Ejemplo de formulario en HTML
+### Ejemplo de formulario en HTML
 
 El siguiente código es un formulario básico en HTML para iniciar sesión:
-
 1. `<h3>` crea un encabezado, en este caso con el texto "Login".
 2. `<form>` es la etiqueta que define el formulario. El atributo `action="index.html"` indica que los datos se enviarán a la página `index.html` y el método de envío es `get`.
 3. `<label>` crea una etiqueta que describe el campo de entrada, vinculada con el campo por el atributo `for`.
@@ -105,7 +80,7 @@ El siguiente código es un formulario básico en HTML para iniciar sesión:
 8. `<option>` define cada una de las opciones dentro del menú desplegable.
 9. `<button type="submit">` crea un botón que, al ser presionado, envía el formulario.
 
-#### Estructura del formulario
+### Estructura del formulario
 
 ```html
 <h3>Login</h3>
@@ -134,7 +109,7 @@ El siguiente código es un formulario básico en HTML para iniciar sesión:
 ```
 
 #### Descripción:
-
-- El formulario incluye campos para ingresar un **nombre** y una **contraseña**, ambos obligatorios gracias al atributo `required`.
+- El formulario incluye campos para ingresar un **nombre** y una **contraseña**, ambos obligatorios gracias al atributo **required**.
 - Un menú desplegable permite seleccionar el **rol** del usuario entre "Usuario", "Administrador" o "Moderador".
 - El botón de tipo **submit** envía el formulario con los datos introducidos a la página especificada (`index.html`).
+- La relación entre **label** e **input** se establece a través del **for** del label con el **name** del input. 
