@@ -1,9 +1,8 @@
-### Selectores
+# Selectores
 
 Existen tres formas distintas de aplicar estilos a los elementos.
 
 1. Por nombre de etiqueta.
-
 ```css
 body {
   background: lightgray;
@@ -11,7 +10,6 @@ body {
 ```
 
 2. Por indetificador.
-
 ```css
 #container {
   width: 70%;
@@ -21,23 +19,20 @@ body {
 ```
 
 3. Por clase.
-
 ```css
 .article {
   width: 20%;
 }
 ```
 
-4. Elementos dentro de otro
-
+4. Elementos dentro de otro.
 ```css
 footer a {
   color: red;
 }
 ```
 
-5. Selector de atributo
-
+5. Selector de atributo.
 ```css
 input[type="text"],
 input[type="submit"] {
@@ -45,8 +40,7 @@ input[type="submit"] {
 }
 ```
 
-6. Selector hijo
-
+6. Selector hijo.
 ```css
 #menu > li > a {
   color: white;

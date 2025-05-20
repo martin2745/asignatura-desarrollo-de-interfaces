@@ -1,4 +1,4 @@
-### Posicionamiento en CSS
+# Posicionamiento en CSS
 
 En CSS, la propiedad `position` se utiliza para especificar cómo un elemento debe posicionarse dentro del flujo del documento. Dependiendo del valor que se le asigne, cambia el comportamiento de los elementos en relación con sus contenedores o la ventana del navegador. Antes de comenzar tenemos que tratar unos conceptos previos:
 
@@ -8,7 +8,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 - `Stackin context`: Contexto de apilamiento. Es el orden en el que se apilarán las cajas que se superponen dentro del mismo contenedor.
 - `Nota`: Al posicionar un elemento se habilitan 5 propiedades que podemos utilizar para mover los elementos en los 3 ejes. Estas son top, left, bottom, right y z-index. Teniendo top y left prioridad sobre bottom y right.
 
-#### 1. **`position: static`**
+## 1. **`position: static`**
 
 - **Descripción**: Este es el valor predeterminado para todos los elementos HTML. Los elementos con `position: static` se colocan en el flujo normal del documento, es decir, en el orden que les corresponde en el DOM. No se les puede aplicar propiedades como `top`, `right`, `bottom` o `left`.
 - **Características**:
@@ -22,7 +22,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### 2. **`position: relative`**
+## 2. **`position: relative`**
 
 - **Descripción**: Un elemento con `position: relative` se coloca en su posición normal en el flujo del documento, pero luego se puede ajustar mediante las propiedades `top`, `right`, `bottom`, `left` en relación con su posición original.
 - **Características**:
@@ -37,7 +37,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### 3. **`position: absolute`**
+## 3. **`position: absolute`**
 
 - **Descripción**: Un elemento con `position: absolute` se saca del flujo normal del documento y se posiciona en relación con su contenedor posicionado más cercano (es decir, un ancestro con `position: relative`, `absolute` o `fixed`). Si no hay ningún ancestro posicionado, se posiciona en relación con el viewport (ventana del navegador).
 - **Características**:
@@ -57,7 +57,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### 4. **`position: fixed`**
+## 4. **`position: fixed`**
 
 - **Descripción**: Un elemento con `position: fixed` se saca del flujo del documento y se posiciona en relación con el viewport (ventana del navegador). A diferencia de `absolute`, este valor no está relacionado con ningún otro contenedor, solo con la ventana del navegador.
 - **Características**:
@@ -75,7 +75,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### 5. **`position: sticky`**
+## 5. **`position: sticky`**
 
 - **Descripción**: Un elemento con `position: sticky` es híbrido entre `relative` y `fixed`. Inicialmente, el elemento se comporta como `relative`, pero cuando se desplaza más allá de un umbral en la página (definido por `top`, `right`, `bottom`, `left`), cambia a `fixed`, quedándose fijo en esa posición mientras se sigue desplazando.
 - **Características**:
@@ -89,7 +89,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### 6. **`z-index`**
+## 6. **`z-index`**
 
 - **Descripción**: `z-index` controla el orden de apilamiento de los elementos posicionados. Un número mayor indica que el elemento debe aparecer por encima de los elementos con un valor más bajo de `z-index`. Sólo afecta a elementos con `position` distinta a `static` (es decir, `relative`, `absolute`, `fixed`, o `sticky`).
 - **Características**:
@@ -108,7 +108,9 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 }
 ```
 
-#### Resumen de comportamiento:
+_*Nota*_: No es lo mismo si tenemos un elemento cotenido por otro colocar al hijo detrás del elemento padre (contenedor) que al elemento padre delante del hijo (contenido). Solo podemos realizar esto colocando al elemento contenido detrás del contenedor y siempre que el elemento contenedor no tenga un *z-index* aplicado.
+
+## Resumen de comportamiento:
 
 - **Static**: flujo normal del documento, no se puede mover ni afecta al `z-index`.
 - **Relative**: se posiciona respecto a su ubicación original.
@@ -118,5 +120,7 @@ En CSS, la propiedad `position` se utiliza para especificar cómo un elemento de
 - **Z-index**: controla la superposición de elementos posicionados.
 
 Estas propiedades son fundamentales para controlar la disposición y el comportamiento visual de los elementos en una página web.
+
+---
 
 [Ir a mediaqueries](08-mediaqueries.md)
