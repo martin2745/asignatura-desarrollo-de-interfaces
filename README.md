@@ -19,9 +19,9 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Tareas CSS
 
-[01 - Ejercicio 1 de HTML y CSS](.\02_CSS\Ejercicios\Ej1\enunciado\enunciado.md)
-[02 - Posicionamiento](.\02_CSS\Ejercicios\Ej2\enunciado\enunciado.md)
-[03 - Práctica responsividad web](.\02_CSS\Ejercicios\Ej3\enunciado\enunciado.md)
-[04 - Maquetación web](.\02_CSS\Ejercicios\Ej4\enunciado\enunciado.md)
-[05 - Estilos Generales y Maquetación](.\02_CSS\Ejercicios\Ej5\enunciado\enunciado.md)
-[06 - Transiciones y Animaciones en CSS](.\02_CSS\Ejercicios\Ej6\enunciado\enunciado.md)
+[01 - Ejercicio 1 de HTML y CSS](./02_CSS/Ejercicios/Ej1/enunciado/enunciado.md)
+[02 - Posicionamiento](./02_CSS/Ejercicios/Ej2/enunciado/enunciado.md)
+[03 - Práctica responsividad web](./02_CSS/Ejercicios/Ej3/enunciado/enunciado.md)
+[04 - Maquetación web](./02_CSS/Ejercicios/Ej4/enunciado/enunciado.md)
+[05 - Estilos Generales y Maquetación](./02_CSS/Ejercicios/Ej5/enunciado/enunciado.md)
+[06 - Transiciones y Animaciones en CSS](./02_CSS/Ejercicios/Ej6/enunciado/enunciado.md)
