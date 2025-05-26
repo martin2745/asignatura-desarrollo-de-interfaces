@@ -73,3 +73,29 @@ Las *animaciones* en CSS permiten crear efectos visuales complejos haciendo que 
 ```
 
 En este ejemplo, el elemento con clase `.caja` se moverá 100 píxeles a la derecha y cambiará de color de rojo a azul en 2 segundos.
+
+Aparte de los valores `infinite` para `animation-iteration-count` y `linear` para `animation-timing-function`, existen otros valores importantes que puedes utilizar en cada una de estas propiedades. Aquí tienes una tabla con los valores principales y su descripción:
+
+| Propiedad                     | Valor                   | Descripción                                                                                 |
+|-------------------------------|-------------------------|--------------------------------------------------------------------------------------------|
+| animation-iteration-count     | 1 (por defecto)         | La animación se ejecuta una sola vez.                                                      |
+|                               | N (ej: 2, 3, 4...)      | La animación se repite N veces.                                                            |
+|                               | decimal (ej: 2.5)       | La animación se repite parcialmente (ej: 2.5 = dos veces completas y media vez más).|
+|                               | infinite                | La animación se repite infinitamente.                                             |
+|                               | initial                 | Usa el valor inicial por defecto de la propiedad.                                    |
+|                               | inherit                 | Hereda el valor de su elemento padre.                                                |
+|                               | unset                   | Resetea la propiedad a su valor heredado o inicial.                                  |
+| animation-timing-function     | linear                  | Velocidad constante durante toda la animación.                                    |
+|                               | ease (por defecto)      | Comienza lento, acelera y termina lento.                                          |
+|                               | ease-in                 | Comienza lento y acelera.                                                         |
+|                               | ease-out                | Comienza rápido y desacelera.                                                     |
+|                               | ease-in-out             | Comienza y termina lento, acelera en el medio.                                    |
+|                               | step-start              | Salto brusco al inicio de cada ciclo.                                                   |
+|                               | step-end                | Salto brusco al final de cada ciclo.                                                    |
+|                               | steps(N, start/end)     | Divide la animación en N pasos discretos.                                               |
+|                               | cubic-bezier(x1, y1, x2, y2) | Curva personalizada para el ritmo de la animación.                           |
+|                               | initial                 | Usa el valor inicial por defecto de la propiedad.                                       |
+|                               | inherit                 | Hereda el valor de su elemento padre.                                                   |
+|                               | unset                   | Resetea la propiedad a su valor heredado o inicial.                                     |
+
+Estos valores te permiten controlar exactamente cuántas veces se repite una animación y cómo varía su velocidad a lo largo del tiempo, adaptando el comportamiento a las necesidades de tu diseño.
