@@ -29,8 +29,8 @@ En Flexbox, hay dos conceptos principales:
 
 Estas propiedades se aplican al contenedor y afectan a todos sus ítems:
 
-- `display: flex;`: El contenedor padre se declara como flexible ocupando el 100% del ancho.
-- `display: inline-flex;`: El contenedor padre se declara como flexible pero pasa a tener un ancho ajustado al tamaño de los elementos internos.
+- `display: flex;`: El contenedor padre se declara como flexible *ocupando el 100% del ancho*.
+- `display: inline-flex;`: El contenedor padre se declara como flexible pero pasa a tener un *ancho ajustado al tamaño de los elementos internos*.
 
 ### Direcciones en Flexbox
 
@@ -94,8 +94,8 @@ La propiedad `justify-content` en Flexbox se utiliza para **alinear** y **distri
 1. **`flex-start`/`left`** (valor por defecto): Los ítems se alinean al **inicio** del contenedor.
 2. **`flex-end`/`right`**: Los ítems se alinean al **final** del contenedor.
 3. **`center`**: Los ítems se alinean en el **centro** del contenedor, distribuyéndose equitativamente a ambos lados del eje.
-4. **`space-between`**: Los ítems se distribuyen con el **máximo espacio posible** entre ellos. El primer ítem se alinea al inicio y el último al final, y los demás se distribuyen equitativamente en el medio.
 5. **`space-around`**: Los ítems tienen **espacio igual a ambos lados**, pero el espacio en los **bordes externos** del contenedor es **la mitad** del espacio entre ítems, haciendo que haya más espacio entre los ítems que en los bordes.
+4. **`space-between`**: Los ítems se distribuyen con el **máximo espacio posible** entre ellos. El primer ítem se alinea al inicio y el último al final, y los demás se distribuyen equitativamente en el medio.
 6. **`space-evenly`**: Los ítems se distribuyen con **espacios iguales** tanto entre ellos como en los **bordes externos** del contenedor, garantizando una separación uniforme en todo el contenedor.
 
 ### Alinear elementos de forma vertical
@@ -107,3 +107,5 @@ La propiedad `align-items` en Flexbox se utiliza para **alinear** los ítems fle
 3. **`center`**: Los ítems se alinean en el **centro** del contenedor, distribuyéndose equitativamente arriba y abajo (en un contenedor de fila) o a los lados (en un contenedor de columna).
 4. **`baseline`**: Los ítems se alinean según su **línea base** de texto. Esto es útil cuando tienes elementos de diferentes tamaños y quieres que se alineen de manera uniforme en base a su texto.
 5. **`stretch`** (valor por defecto): Los ítems se estiran para ocupar todo el espacio disponible en el contenedor. Esto significa que, si no se establece un tamaño específico para los ítems, se expandirán para llenar el contenedor.
+
+_*align-self*_: Es una propiedad de CSS Flexbox que permite alinear individualmente un elemento hijo dentro de un contenedor flexible, sobrescribiendo la alineación definida por la propiedad align-items del contenedor. Esto significa que puedes alinear un solo elemento de manera diferente al resto de los elementos dentro del mismo contenedor flex.

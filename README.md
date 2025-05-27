@@ -25,3 +25,16 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 [04 - Maquetación web](./02_CSS/Ejercicios/Ej4/enunciado/enunciado.md)
 [05 - Estilos Generales y Maquetación](./02_CSS/Ejercicios/Ej5/enunciado/enunciado.md)
 [06 - Transiciones y Animaciones en CSS](./02_CSS/Ejercicios/Ej6/enunciado/enunciado.md)
+
+## Flexbox
+
+### Apuntes Flexbox
+
+[00 - Flexbox](./03_Flexbox/Temario/00_Flexbox.md)
+
+### Tareas Flexbox
+
+[01 - Maquetación de Portafolio Web con Flexbox](./03_Flexbox/Ejercicios/Ej1/enunciado/enunciado.md)
+[02 - Diseño de interfaces web - agencia de viajes](./03_Flexbox/Ejercicios/Ej2/Ej2.1/enunciado/tarea.pdf)
+[03 - Maquetación web con Flexbox](./03_Flexbox/Ejercicios/Ej3/enunciado/enunciado.md)
+[04 - Diseño de interfaces web - gimnasio](./03_Flexbox/Ejercicios/Ej4/EXAMEN%20PRACT%202EVAL%20DIWD.pdf)
