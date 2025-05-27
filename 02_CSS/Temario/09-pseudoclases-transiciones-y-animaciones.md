@@ -99,3 +99,7 @@ Aparte de los valores `infinite` para `animation-iteration-count` y `linear` par
 |                               | unset                   | Resetea la propiedad a su valor heredado o inicial.                                     |
 
 Estos valores te permiten controlar exactamente cuántas veces se repite una animación y cómo varía su velocidad a lo largo del tiempo, adaptando el comportamiento a las necesidades de tu diseño.
+
+---
+
+[Ir a medidas absolutas y relativas](10-medias-absolutas-y-relativas.md)

@@ -16,6 +16,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 [07 - Posicionamiento](./02_CSS/Temario/07-posicionamiento.md)  
 [08 - Mediaqueries](./02_CSS/Temario/08-mediaqueries.md)  
 [09 - Pseudoclases Transiciones y Animaciones](./02_CSS/Temario/09-pseudoclases-transiciones-y-animaciones.md)  
+[10 - Medidas absolutas y relativas](./02_CSS/Temario/10-medias-absolutas-y-relativas.md)  
 
 ### Tareas CSS
 
