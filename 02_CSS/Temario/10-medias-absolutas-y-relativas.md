@@ -44,3 +44,9 @@ Las medidas relativas dependen del contexto, ya sea del tamaño del contenedor, 
 | %      | Relativa   | Tamaño del contenedor padre      | Anchos, alturas, layouts          | Adaptable a contenedor             |
 | vh     | Relativa   | 1% de altura del viewport        | Alturas adaptativas               | Responsive según altura pantalla   |
 | vw     | Relativa   | 1% de ancho del viewport         | Anchos adaptativos                | Responsive según ancho pantalla    |
+
+---
+
+## Unidades recomendadas para el desarrollo web
+
+![Unidades recomendadas para el desarrollo web](./Recursos/Unidades%20recomendadas%20para%20el%20desarrollo%20web.png)
