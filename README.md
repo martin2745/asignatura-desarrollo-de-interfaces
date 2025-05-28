@@ -17,7 +17,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Apuntes CSS
 
-[Cheatsheet CSS](./02_CSS/Temario/Cheatsheet%20CSS.pdf)  
+[Cheatsheet CSS](./02_CSS/Temario/Recursos/Cheatsheet%20CSS.pdf)  
 [00 - Incluir CSS](./02_CSS/Temario/00-incluir-css.md)  
 [01 - Aplicacion Reglas](./02_CSS/Temario/01-aplicacion-reglas.md)  
 [02 - Selectores](./02_CSS/Temario/02-selectores.md)  
