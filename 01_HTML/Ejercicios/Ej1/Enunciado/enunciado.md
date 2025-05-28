@@ -1,4 +1,4 @@
-# Ejercicio 1 de HTML y CSS
+# Ejercicio 1 de HTML
 
 1. **Página principal: `index.html`**
 - Debe incluir lo siguiente:
