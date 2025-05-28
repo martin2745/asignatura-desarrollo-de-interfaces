@@ -158,3 +158,5 @@ La unidad `fr` es una de las características clave de CSS Grid y permite asigna
 - Un valor de **`2fr`** hará que el ítem ocupe el doble de espacio que los elementos con `1fr`.
 
 Estas unidades son útiles para crear layouts flexibles y responsivos sin necesidad de usar porcentajes o tamaños fijos.
+
+_*Nota*_: Al igual que en flexbox, aquí tambien existen las propiedades *align-items* y *justify-content* pero es mucho mejor hacer uso de flexbox para centrar los contenidos vertical y horizontalmente.
