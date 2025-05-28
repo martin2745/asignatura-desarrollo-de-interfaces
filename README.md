@@ -6,7 +6,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Apuntes HTML
 
-[Cheatsheet HTML](./01_HTML/Temario/Cheatsheet%20HTML5.pdf)
+[Cheatsheet HTML](./01_HTML/Temario/Cheatsheet%20HTML5.pdf)  
 [00 - Repaso de contenidos HTML](./01_HTML/Temario/00-repaso-HTML.md)
 
 ### Tareas HTML
@@ -17,7 +17,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Apuntes CSS
 
-[Cheatsheet CSS](./02_CSS/Temario/Cheatsheet%20CSS.pdf)
+[Cheatsheet CSS](./02_CSS/Temario/Cheatsheet%20CSS.pdf)  
 [00 - Incluir CSS](./02_CSS/Temario/00-incluir-css.md)  
 [01 - Aplicacion Reglas](./02_CSS/Temario/01-aplicacion-reglas.md)  
 [02 - Selectores](./02_CSS/Temario/02-selectores.md)  
