@@ -159,4 +159,69 @@ La unidad `fr` es una de las características clave de CSS Grid y permite asigna
 
 Estas unidades son útiles para crear layouts flexibles y responsivos sin necesidad de usar porcentajes o tamaños fijos.
 
-_*Nota*_: Al igual que en flexbox, aquí tambien existen las propiedades *align-items* y *justify-content* pero es mucho mejor hacer uso de flexbox para centrar los contenidos vertical y horizontalmente.
+### Colocación horizontal y vertical
+
+Colocación horizontal y vertical en CSS Grid con justify-items y align-items
+
+**justify-items** y **align-items** son propiedades de CSS Grid que permiten alinear los elementos hijos dentro de sus celdas en dos direcciones:
+
+- **justify-items**: controla la alineación horizontal (eje de las columnas, de izquierda a derecha en la mayoría de los idiomas).
+- **align-items**: controla la alineación vertical (eje de las filas, de arriba a abajo).
+
+Valores principales para ambas propiedades
+
+- `start`: alinea los elementos al inicio de la celda (izquierda para justify-items, arriba para align-items).
+- `end`: alinea los elementos al final de la celda (derecha para justify-items, abajo para align-items).
+- `center`: centra los elementos dentro de la celda.
+- `stretch`: estira los elementos para que ocupen todo el espacio disponible en la celda (valor por defecto).
+
+Ejemplo básico
+
+```css
+.grid-container {
+  display: grid;
+  justify-items: center; /* centra horizontalmente */
+  align-items: end;      /* alinea abajo verticalmente */
+}
+```
+
+Esto hará que todos los elementos del grid se centren horizontalmente y se alineen en la parte inferior de sus celdas.
+
+**Resumen rápido**
+- Usa **justify-items** para la alineación horizontal de los elementos dentro de cada celda.
+- Usa **align-items** para la alineación vertical de los elementos dentro de cada celda.
+- Ambos se aplican al contenedor grid y afectan a todos los hijos de forma global.
+
+_*Nota*_: La propiedad *place-items* agrupa ambas: `place-items: vertical horizontal`.
+_*Nota*_: La propiedad *justify-self* controla la alineación horizontal del contenido de un elemento Grid dentro de su celda
+
+Además, exiten las siguientes propiedades:
+*justify-content* y *align-content* en CSS Grid alinean el conjunto de la cuadrícula (todas las filas o columnas) dentro del contenedor:
+- *justify-content*: alinea la cuadrícula horizontalmente (eje de las columnas) dentro del contenedor.
+- *align-content*: alinea la cuadrícula verticalmente (eje de las filas) dentro del contenedor.
+Ambas solo tienen efecto si la cuadrícula no ocupa todo el espacio del contenedor y hay más de una fila o columna.
+
+_*Nota*_: La propiedad *place-content* agrupa ambas: `place-items: vertical horizontal`.
+
+### Uso de áreas en Grid
+
+Las áreas en CSS Grid permiten definir y nombrar zonas específicas de la cuadrícula para ubicar fácilmente los elementos. Se usan las propiedades grid-template-areas en el contenedor y grid-area en los hijos para asignarles su posición de forma clara y visual.
+
+**Ejemplo sencillo:**
+
+```css
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 80px 1fr 60px;
+}
+
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main    { grid-area: main; }
+.footer  { grid-area: footer; }
+```
