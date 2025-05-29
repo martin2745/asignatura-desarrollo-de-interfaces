@@ -15,6 +15,8 @@
   - [Definición de filas en CSS Grid](#definición-de-filas-en-css-grid)
   - [Posicionamiento de elementos en CSS Grid](#posicionamiento-de-elementos-en-css-grid)
   - [Unidades fraccionales en Grid](#unidades-fraccionales-en-grid)
+  - [Colocación horizontal y vertical](#colocación-horizontal-y-vertical)
+  - [Uso de áreas en Grid](#uso-de-areas-en-grid)
 
 ### Conceptos básicos de CSS Grid
 
