@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - 02 Filas y Columnas</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!--Bootstrap 5-->
+    <link
+      rel="stylesheet"
+      href="../../recursos/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container border">
+      <div class="row">
+        <header class="col-12 bg-primary text-white p-2 ps-5">
+          <h1>Aprendiendo el funcionamiento de filas y columnas</h1>
+        </header>
+
+        <nav id="menu" class="col-12 bg-secondary text-black">
+          <ul class="row">
+            <li class="col-sm-12 col-md">Inicio</li>
+            <li class="col-sm-12 col-md">Página 1</li>
+            <li class="col-sm-12 col-md">Página 2</li>
+            <li class="col-sm-12 col-md">Página 3</li>
+            <li class="col-sm-12 col-md">Contacto</li>
+          </ul>
+        </nav>
+
+        <section id="content" class="col-12">
+          <div class="row">
+            <section id="products" class="col-9 border">
+              <h2>Productos</h2>
+              <hr />
+              <div class="items">
+                <div class="row">
+                  <div class="item col-4 bg-primary">Producto</div>
+                  <div class="item col-3 bg-warning offset-1">Producto</div>
+                  <div class="item col-2 bg-danger offset-2">Producto</div>
+                </div>
+                <div class="row">
+                  <div class="item col-3 col-lg-2 bg-primary m-3">Producto</div>
+                  <div class="item col-3 col-lg-2 bg-warning m-3">Producto</div>
+                  <div class="item col-3 col-lg-2 bg-danger m-3">Producto</div>
+                  <div class="item col-3 col-lg-2 bg-success m-3">Producto</div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="item col-3 bg-primary m-3">Producto</div>
+                  <div class="item col-3 bg-warning m-3">Producto</div>
+                  <div class="item col-3 bg-danger m-3">Producto</div>
+                </div>
+              </div>
+            </section>
+            <aside class="col-3 border">
+              <h2>Barra lateral</h2>
+              <div class="row lateral bg-danger align-items-start">
+                <div class="col-4 bg-primary align-self-start order-2">
+                    Elemento 1
+                </div>
+                <div class="col-4 bg-success align-self-center order-3">
+                    Elemento 2
+                </div>
+                <div class="col-4 bg-warning align-self-end order-1">
+                    Elemento 3
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <footer class="col-12 bg-info d-none d-sm-none d-md-block">
+          Explicación Bootstrap &copy; 2025
+        </footer>
+      </div>
+    </div>
+
+    <!--Scripts de JS necesarios para Bootstrap 5-->
+    <script
+      type="text/javascript"
+      src="../../recursos/jquery/jquery-3.7.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../recursos/bootstrap-5.3.3-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

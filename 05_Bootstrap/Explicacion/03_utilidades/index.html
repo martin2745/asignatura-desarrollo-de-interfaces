@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - 03 Utilidades</title>
+    <!--Bootstrap 5-->
+    <link
+      rel="stylesheet"
+      href="../../recursos/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" style="height: 500px">
+      <h1>Utilidades de Bootstrap</h1>
+      <hr />
+      <h2>
+        Altura, anchura, radio, borde, color y sombras de fondo en Bootstrap
+      </h2>
+      <div
+        class="caja w-50 h-50 border border-primary rounded-5 bg-warning text-white shadow"
+      >
+        <h1>Clases de altura y anchura</h1>
+      </div>
+      <hr />
+
+      <h2>Flotados</h2>
+      <div
+        class="float-start float-sm-none caja w-25 h-25 border border-primary rounded-5"
+      >
+        <h1>Caja 1</h1>
+      </div>
+      <div class="float-start caja w-25 h-25 border border-primary rounded-5">
+        <h1>Caja 2</h1>
+      </div>
+      <div class="float-start caja w-25 h-25 border border-primary rounded-5">
+        <h1>Caja 3</h1>
+      </div>
+      <div class="clearfix"></div>
+      <h2>Fin de flotados</h2>
+      <hr />
+
+      <h2>Margin y paddin Bootstrap</h2>
+      <div class="row">
+        <div class="caja border border-primary rounded-5 col-3 me-3">
+          <h1>Caja 1</h1>
+        </div>
+        <div class="caja border border-primary rounded-5 col-8 pt-5">
+          <h1>Caja 2</h1>
+        </div>
+      </div>
+
+      <hr />
+      <h2>Ocultar elementos Bootstrap</h2>
+      <div class="caja border invisible">
+        <h1>Caja</h1>
+      </div>
+
+      <hr />
+      <h2>Formato de texto</h2>
+      <h1 class="display-4 small font-italic text-uppercase">
+        Caja formateada
+      </h1>
+    </div>
+
+    <!--Scripts de JS necesarios para Bootstrap 5-->
+    <script
+      type="text/javascript"
+      src="../../recursos/jquery/jquery-3.7.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../recursos/bootstrap-5.3.3-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

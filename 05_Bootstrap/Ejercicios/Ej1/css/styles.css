@@ -1,0 +1,53 @@
+/* Estilos personalizados */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Cabecera*/
+.navbar-brand img {
+    height: 8vh;
+    width: auto; /* Mantiene la proporción */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 40vh;          /* Fija la altura de la imagen en 40vh */
+    object-fit: cover;     /* Hace que la imagen cubra el área, recortando si es necesario */
+}
+
+/*Servicios*/
+.card {
+    height: 100%; /* Obliga a que todas las tarjetas tengan la misma altura */
+    transition: all 300ms; /* Se tarda 300ms en realizar cualquier transición */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.card-body {
+    flex-grow: 1; /* Expande el cuerpo de la tarjeta para igualar alturas */
+    display: flex; /* Declara el contenedor como flexible */
+    flex-flow: column wrap; /* La disposición de los elementos contenidos será en forma de columna y eeenvolvente */
+}
+
+.card-body .btn {
+    width: auto; /* Ajusta el tamaño al contenido del botón */
+    align-self: center; /* Centra el botón dentro de la tarjeta */
+}
+
+.card-img-top {
+    width: 100%; /* Se ajusta al ancho de la tarjeta */
+    height: 20vh; /* Ajusta la altura según necesidad */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+}
+
+/*Pie de página*/
+footer ul li a {
+    font-size: 1.5rem; /* Tamaño de los iconos */
+}
