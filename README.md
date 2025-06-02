@@ -43,6 +43,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Apuntes Flexbox
 
+[Cheatsheet FLEXBOX](./03_Flexbox/Temario/recursos/CheatSheet_FLEXBOX.pdf)  
 [00 - Flexbox](./03_Flexbox/Temario/00_Flexbox.md)  
 
 ### Tareas Flexbox
@@ -56,6 +57,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 
 ### Apuntes Grid
 
+[Cheatsheet GRID](./04_Grid/Temario/recursos/CheatSheet_GRID.pdf)  
 [00 - Grid](./04_Grid/Temario/00-grid.md)  
 
 ### Tareas Grid
@@ -67,3 +69,8 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces.
 ## Bootstrap
 
 [00 - Bootstrap5](./05_Bootstrap/Temario/00-bootstrap5.md)
+
+### Tareas Bootstrap
+
+[01 - Creación de un sitio web utilizando Bootstrap](./05_Bootstrap/Ejercicios/Ej1/enunciado/enunciado.md)  
+[02 - Maquetación de Sitio Web Completo](./05_Bootstrap/Ejercicios/Ej2/enunciado/enunciado.md)  

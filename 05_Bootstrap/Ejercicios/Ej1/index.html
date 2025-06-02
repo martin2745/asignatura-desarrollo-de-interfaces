@@ -1,217 +1,354 @@
 <!DOCTYPE html>
-<html >
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="styles.css" />
-    <link type="image/x-icon" rel="icon" href="img/imagenes-icono/icono.png" />
-    <title>Landing con Bootstrap 5</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <title>Web Profesional con Bootstrap 5</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <!-- Enlace a Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="../../recursos/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <!-- Enlace al CSS personalizado -->
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!--Barra de navegacion-->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
+    <!-- Cabecera -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo_ok.png" alt="Logo" />
+        </a>
+
+        <!-- Botón de menú para móviles
+            Usa la clase "navbar-toggler" para colapsar el menú en un botón tipo 'hamburguesa'.
+            El atributo data-bs-toggle="collapse" es propio de Bootstrap e indica que el botón activará un comportamiento de colapso/desplegable.
+            data-bs-target="#navbarNav": Este atributo indica cuál es el elemento que se colapsará o desplegará.
+            El valor #navbarNav es un selector que apunta al elemento con id="navbarNav" (que sería el contenedor del menú de navegación).
+            <span class="navbar-toggler-icon"></span>: Este <span> contiene un icono que representa el botón de "hamburguesa".
+            La clase navbar-toggler-icon es propia de Bootstrap y añade el icono de tres líneas horizontales (el típico icono de menú).
+        -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarNav"
         >
+          <!--El botón está conectado al menú a través del id="navbarNav".-->
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="https://github.com/martin2745"
-            ><img
-              class="icono-github"
-              src="img/imagenes-icono/github.png"
-              alt="Logo de la página web"
-          /></a>
-          <ul class="navbar-nav">
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi"
-                >Sobre mí</a
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
               >
+                Proyectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Diseño Web</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Desarrollo de Apps</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Repositorios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
 
-    <!--Sección principal-->
-    <section class="desarrollador align-items-stretch text-center">
-      <div class="desarrollador-principal">
-        <img
-          class="desarrollador-imagen"
-          alt="Imagen de desarrollador"
-          src="img/imagenes-desarrolladores/Martín.jpg"
-        />
-        <h1>Hola soy Martín Gil</h1>
-        <h2>Trato de explicar conceptos relacionados con la informática</h2>
-      </div>
-      <div class="desarrollador-inferior">
-        <img
-          class="desarrollador-inferior-imagen"
-          src="img/imagenes-desarrolladores/desarrollador-inferior.svg"
-          alt="Monitor, portatil y logos"
-        />
-      </div>
-    </section>
-
-    <!--Sobre mi-->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h2 class="seccion-titulo texto-blanco">Sobre mí</h2>
-        <p class="seccion-texto">
-          Mi nombre es Martín y soy graduado en Ingeniería Informática por la
-          Universidad de Vigo. Además he realizado el Máster en Ingeniería
-          Informática y el Máster de Profesorado. En estos momentos soy profesor
-          de Sistemas y Aplicaciones Informáticas en formación profesional.
-        </p>
-        <p class="seccion-texto">
-          Me interesa la informática y poder aprender sobre campos que aún no
-          domino.
-        </p>
-      </div>
-    </section>
-
-    <!--Experiencia-->
-    <section id="proyectos" class="experiencia seccion-clara">
-      <div class="container experiencia-contenedor">
-        <h2>Repositorios</h2>
-        <div class="row">
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-ubuntu"></i>
-            <p class="experiencia-titulo">
-              <a href="https://github.com/martin2745/earthTrack"
-                >linux y bash</a
-              >
-            </p>
-            <p>
-              Este repositorio contiene explicaciones teóricas y prácticas de
-              comandos de Linux, el funcionamiento de este sistema operativo y
-              scripts escritos en Bash.
-            </p>
-            <span class="badge text-bg-success">Linux</span>
-            <span class="badge text-bg-success">Bash</span>
-          </div>
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">
-              <a href="https://github.com/martin2745/earthTrack">earthTrack</a>
-            </p>
-            <p>
-              Este proyecto está desarrollado por el grupo FullStacks para la
-              asignatura PDP. Aplicación de cálculo de la huella de carbono en
-              base a procesos.
-            </p>
-            <span class="badge text-bg-success">HTML</span>
-            <span class="badge text-bg-success">CSS</span>
-            <span class="badge text-bg-success">JS</span>
-            <span class="badge text-bg-success">PHP</span>
-          </div>
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-git"></i>
-            <p class="experiencia-titulo">
-              <a href="https://github.com/martin2745/cursoGit">git y github</a>
-            </p>
-            <p>
-              En este curso vamos a describir todo el funcionamiento de Git
-              junto con GitHub desde lo más básico a lo más complejo.
-            </p>
-            <span class="badge text-bg-success">Git</span>
-            <span class="badge text-bg-success">GitHub</span>
-          </div>
+    <!-- Carrusel de imagenes -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/hotel.jpg" class="d-block w-100" alt="Imagen 1" />
         </div>
-        <div class="row">
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-windows"></i>
-            <p class="experiencia-titulo">
-              <a href="https://github.com/martin2745/PowerShell-Scripting"
-                >windows y powershell</a
-              >
-            </p>
-            <p>
-              Este repositorio alberga scripts escritos en PowerShell, un
-              lenguaje de scripting y automatización desarrollado por Microsoft.
-              PowerShell es especialmente poderoso en entornos Windows y se basa
-              en cmdlets, que son pequeños programas que realizan operaciones
-              específicas.
-            </p>
-            <span class="badge text-bg-success">Windows</span>
-            <span class="badge text-bg-success">PowerShell</span>
-          </div>
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-braces"></i>
-            <p class="experiencia-titulo">
-              <a href="https://github.com/martin2745/EventGO-react">eventGo</a>
-            </p>
-            <p>
-              Esta es una plataforma de asistencia a la gestión de eventos con
-              dos módulos: un back-end responsable del almacenamiento de datos y
-              la lógica de la aplicación desarrollado con Spring Framework y un
-              front-end SPA empleando la librería de JavaScript React.
-            </p>
-            <span class="badge text-bg-success">React</span>
-            <span class="badge text-bg-success">Spring</span>
-          </div>
+        <div class="carousel-item">
+          <img src="img/infografia.jpg" class="d-block w-100" alt="Imagen 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/jardineria.jpg" class="d-block w-100" alt="Imagen 3" />
         </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
-    <!--Contacto-->
-    <section id="contacto" class="contacto seccion-oscura">
-      <div>
-        <div class="container rectangulo">
-          <div class="row">
-            <div class="col-12 col-md-8 seccion-titulo">
-              ¡Hablemos! Contáctame si estás interesado
+    <!-- Sección de servicios -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Nuestros servicios</h2>
+      <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="img/responsivo.jpg"
+              class="card-img-top"
+              alt="Diseño Web"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Diseño Web</h5>
+              <p class="card-text">
+                Creamos diseños modernos y responsivos para tu sitio web.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                Más info
+              </button>
             </div>
-            <div class="col-12 col-md-4 seccion-correo">
-              <a href="mailto:mgilblanco@edu.xunta.gal">
-                <button>
-                  Contacto
-                  <i class="bi bi-envelope-check-fill"></i>
-                </button>
-              </a>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="img/app_development.jpg"
+              class="card-img-top"
+              alt="Desarrollo de apps"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo de apps</h5>
+              <p class="card-text">
+                Desarrollamos aplicaciones móviles y web a medida.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                Más info
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="img/digital_mkt2.jpg"
+              class="card-img-top"
+              alt="Marketing Digital"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marketing Digital</h5>
+              <p class="card-text">
+                Potenciamos tu negocio con estrategias de marketing digital.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                Más info
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Footer-->
-    <footer class="seccion-oscura">
-      <p class="footer-texto">Martín Gil Blanco &copy; 2024</p>
-      <div class="footer-iconos">
-        <a href="https://www.linkedin.com/in/mart%C3%ADn-gil-blanco/"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <a href="https://github.com/martin2745"><i class="bi bi-github"></i></a>
+    <!-- Modais -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Diseño Web</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              En nuestra empresa nos especializamos en diseño web responsivo,
+              garantizando que tu sitio se vea y funcione perfectamente en
+              cualquier dispositivo. Creamos páginas modernas, intuitivas y
+              adaptadas a tus necesidades, mejorando la experiencia del usuario
+              y la visibilidad en buscadores. Si quieres una web atractiva,
+              rápida y eficiente, podemos ayudarte a hacerla realidad.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Desenvolvemento de Apps</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Transformamos as túas ideas en aplicacións innovadoras e
+              funcionais. Desenvolvemos apps móbiles e web á medida, optimizadas
+              para ofrecer un rendemento excepcional. Tanto para Android como
+              para iOS, creamos solucións personalizadas que melloran a
+              interacción cos teus clientes e potencian o crecemento do teu
+              negocio..
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Pechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Marketing Dixital</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Implementamos estratexias de marketing dixital para aumentar a túa
+              visibilidade. Axudámosche a destacar na internet cunha estratexia
+              de marketing dixital efectiva. Xestionamos campañas publicitarias,
+              optimización en buscadores (SEO), redes sociais e moito Más para
+              aumentar a túa visibilidade e atraer Más clientes. Se buscas
+              maximizar o impacto da túa marca en liña, temos a solución
+              perfecta para ti.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Pechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Contacto</h4>
+            <p>Email: info@miweb.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Redes Sociales</h4>
+            <ul class="list-unstyled d-flex gap-3">
+              <li>
+                <a href="https://www.facebook.com" class="text-white"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://bsky.app" class="text-white"
+                  ><i class="fab fa-bluesky"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" class="text-white"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Subscríbete</h4>
+            <form>
+              <input
+                type="email"
+                class="form-control mb-2"
+                placeholder="Tu email"
+              />
+              <button type="submit" class="btn btn-primary">
+                Subscribirse
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- Enlace a Bootstrap 5 JS (necesario para dropdowns, modais, etc.) -->
+    <script
+      type="text/javascript"
+      src="../../recursos/jquery/jquery-3.7.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../recursos/popper/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../recursos/bootstrap-5.3.3-dist/js/bootstrap.min.js"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,131 @@
+/* Estilos xerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ESTILOS DE indice.html*/
+
+/* Botón para voltar ao inicio */
+
+/* Estilo para o contedor do carrusel */
+#carouselExample {
+  display: flex;
+  align-items: center;
+}
+
+#carouselExample img{
+  width: 100%;           /* Fija a largura da imaxe ao 100% do contedor */	
+  height: 89.3vh;          /* Fija la altura de la imagen en 40vh */
+  object-fit: cover;     /* Hace que la imagen cubra el área, recortando si es necesario */
+
+}
+/* Estilo para as img do carrusel */
+.carousel-item img {
+  aspect-ratio: 16 / 9; /*Define a proporción da imaxe (16:9)*/
+}
+
+/* Sección de proyectos Destacados */
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgb(195, 195, 255);
+}
+
+footer p {
+  margin: 0;
+  color: rgb(0, 157, 255);
+}
+
+footer img {
+  transition: transform 300ms;
+}
+
+footer img:hover {
+  transform: scale(1.5);
+}
+
+/*ESTILOS DE proyectos.html*/
+.voltar-inicio {
+  margin-top: 3vh;
+  height: 10vh;
+  text-align: center;
+}
+
+.voltar-inicio a {
+  background-color: rgba(18, 18, 161, 0.747);
+  color: white;
+  border-radius: 10px;
+  padding: 1vh;
+  transition: all 300ms;
+}
+
+.proyectos-destacados{
+  display: block;
+  height: 71.2vh;
+}
+
+.proyectos-destacados > h2 {
+  text-align: center;
+  margin-top: 10vh;
+  color: rgba(18, 18, 161, 0.747);
+}
+
+.voltar-inicio a:hover {
+  background-color: blue;
+}
+
+.proyecto-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2vw;
+  margin-bottom: 10vh;
+}
+
+.proyecto {
+  width: 16vw;
+  padding: 1vw;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.proyecto h3 {
+  color: rgba(14, 14, 114, 0.747);
+}
+
+.proyecto > img {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Media Queries para deseño responsivo */
+@media (max-width: 768px) {
+  .proyectos-destacados {
+    height: auto;
+  }
+  
+  .proyecto-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proyecto {
+    width: 80%;
+  }
+  .proyecto > img {
+    width: 90%;
+    height: 35vh;
+  }
+}
