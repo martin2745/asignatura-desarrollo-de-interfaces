@@ -1,6 +1,6 @@
 ﻿# Desarrollo de Interfaces
 
-En este repositorio encontraremos materiales para el desarrollo de interfaces.
+En este repositorio encontraremos materiales para el desarrollo de interfaces web. Como punto de partida teórico es conveniente tener en cuenta los siguientes aspectos: [conceptos previos](./conceptos_previos.md).
 
 ## HTML
 
