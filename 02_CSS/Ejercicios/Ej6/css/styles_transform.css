@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos base */
+
+/* Contenedor flex donde los elementos tienen un espacio uniforme a su alrededor,
+   centra el contenedor en la página y añade un espacio vertical de 50px,
+   hace que el contenedor ocupe el 80% del ancho disponible */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* Imágenes dentro del contenedor con anchura del 15% y borde sólido negro de 5px */
+.container img {
+    border: 5px solid black;
+    width: 15%;
+}
+
+/* Transformaciones combinadas */
+img:nth-of-type(1) {
+    transform: rotate(30deg) scale(0.5, 0.5) translate(100px);
+}
+
+/* Modificando el origen de la transformación */
+img:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+img:nth-of-type(4) {
+    transform: rotate(45deg);
+}
+
+/*
+    :nth-of-type: selecciona el enésimo elemento de un tipo concreto entre sus hermanos.
+    :nth-child: selecciona el enésimo hijo (de cualquier tipo) dentro de su padre, y solo aplica si ese hijo es del tipo indicado.
+
+Ejemplo 1: :nth-of-type
+
+```css
+p:nth-of-type(2) {
+  color: blue;
+}
+```
+
+Esto selecciona el segundo <p> entre todos los <p> hermanos, sin importar qué otros elementos haya en el mismo contenedor.
+
+Ejemplo 2: :nth-child
+
+```css
+p:nth-child(2) {
+  color: green;
+}
+```
+
+Esto selecciona el segundo hijo del contenedor solo si ese hijo es un <p>. Si el segundo hijo es otro tipo de elemento, no se aplica el estilo.
+Estos ejemplos muestran cómo cada pseudo-clase selecciona los elementos de manera diferente según su posición y tipo.
+*/

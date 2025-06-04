@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Transicións*/
+
+/*Transición por separado*/
+h1 {
+    color: red;
+    background-color: blue;
+    text-align: center;
+    /*transition: color 3s ease-in, background-color 3s ease-in;*/
+    transition-property: color, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+h1:hover {
+    color: white;
+    background-color: black;
+}
+
+/*Transición todo á vez, nunha soa propiedade*/
+.container {
+    background-color:red;
+    border-radius: 0%;
+    height: 200px;
+    margin: 30px auto;
+    transition: all 1s linear;
+    width:200px;
+}
+
+.container:hover{
+    background-color: blue;
+    border-radius: 50%;
+}

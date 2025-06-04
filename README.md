@@ -27,7 +27,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 [06 - Display y Float](./02_CSS/Temario/06-display-y-float.md)  
 [07 - Posicionamiento](./02_CSS/Temario/07-posicionamiento.md)  
 [08 - Mediaqueries](./02_CSS/Temario/08-mediaqueries.md)  
-[09 - Pseudoclases Transiciones y Animaciones](./02_CSS/Temario/09-pseudoclases-transiciones-y-animaciones.md)  
+[09 - Pseudoclases, transformaciones, transiciones y animaciones](./02_CSS/Temario/09-pseudoclases-transformaciones-transiciones-y-animaciones.md)  
 [10 - Medidas absolutas y relativas](./02_CSS/Temario/10-medias-absolutas-y-relativas.md)  
 
 ### Tareas CSS
@@ -37,7 +37,8 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 [03 - Práctica responsividad web](./02_CSS/Ejercicios/Ej3/enunciado/enunciado.md)  
 [04 - Maquetación web](./02_CSS/Ejercicios/Ej4/enunciado/enunciado.md)  
 [05 - Estilos Generales y Maquetación](./02_CSS/Ejercicios/Ej5/enunciado/enunciado.md)  
-[06 - Transiciones y Animaciones en CSS](./02_CSS/Ejercicios/Ej6/enunciado/enunciado.md)  
+[06 - Transformaciones, Transiciones y Animaciones con CSS3](./02_CSS/Ejercicios/Ej6/enunciado/enunciado.md)  
+
 
 ## Flexbox
 

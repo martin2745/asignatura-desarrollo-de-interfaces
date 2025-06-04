@@ -1,81 +1,69 @@
-# Transiciones y Animaciones en CSS
+# Transformaciones, Transiciones y Animaciones con CSS3
 
 ### Estructura General
 
-1. **Archivos y organización**:
-
-   - El proyecto se compone de un archivo principal `index.html` y dos páginas temáticas: `transiciones.html` y `animaciones.html`.
-   - Los estilos generales se encuentran en `css/styles.css`, mientras que los estilos específicos de cada sección están en `css/transiciones.css` y `css/animaciones.css`.
+**Objetivo:**  
+Practicar y comprender el uso de transformaciones, transiciones y animaciones en CSS3 para crear efectos visuales dinámicos e interactivos. La tarea se divide en tres partes, cada una centrada en una de estas características de CSS3.
 
 ---
 
-### Página de Inicio
+### Parte 1: Transformaciones
 
-1. **Navegación**:
+1. **Estructura HTML:**
+   - Crea un archivo HTML básico con un contenedor (`.container`) que incluya cuatro imágenes.
+   - Las imágenes deben estar correctamente referenciadas y posicionadas dentro del contenedor.
 
-   - La página principal (`index.html`) presenta un título y un menú de navegación con enlaces a las secciones de **Transiciones** y **Animaciones**.
-   - El menú utiliza una lista desordenada (`ul`) con enlaces (`a`) a cada sección.
+2. **Estilos CSS:**
+   - Define el contenedor como un flexbox para distribuir las imágenes uniformemente.
+   - Aplica un borde sólido negro de 5px a todas las imágenes.
+   - Establece un ancho del 15% para cada imagen.
 
----
-
-### Transiciones
-
-1. **Botón con transición**:
-
-   - En la página `transiciones.html` se muestra un botón de enlace con el id `#boton`.
-   - El botón tiene un fondo verde, texto blanco, borde negro y un tamaño fijo.
-   - Se le aplican transiciones CSS para suavizar los cambios de color de fondo y borde al pasar el ratón sobre él.
-   - Al hacer hover, el botón cambia su color de fondo a **orangered**, su borde a **rojo** y sus esquinas se redondean.
-   - La transición del borde dura **300ms** y la del color de fondo **1s**.
-
-2. **Personalización sugerida**:
-
-   - Se pueden añadir o modificar transiciones para otras propiedades, como el color del texto (`color`), ajustando los tiempos para experimentar diferentes efectos visuales.
+3. **Transformaciones:**
+   - Aplica diferentes transformaciones a cada imagen:
+     - **Rotación:** Rota cada imagen en distintos ángulos (por ejemplo, 45°, 15°, -15°, -45°).
+     - **Traslación:** Desplaza las imágenes en diferentes direcciones usando `translateX`, `translateY` o `translate`.
+     - **Escalado:** Escala las imágenes en diferentes proporciones con `scale`, `scaleX` o `scaleY`.
+     - **Sesgado:** Aplica un efecto de sesgado (`skew`) a las imágenes.
+     - **Transformaciones combinadas:** Combina varias transformaciones en una sola imagen (por ejemplo, rotación, escalado y traslación).
+     - **Cambio de origen de transformación:** Modifica la propiedad `transform-origin` para observar cómo afecta al resultado.
 
 ---
 
-### Animaciones
+### Parte 2: Transiciones
 
-1. **Caja animada**:
+1. **Estructura HTML:**
+   - Crea un archivo HTML básico con un título (``) y un contenedor (`.container`).
 
-   - En la página `animaciones.html` hay un contenedor con una caja (`#caja`) que muestra el texto "Soy una caja".
-   - La caja tiene un tamaño fijo, fondo **lightseagreen**, texto blanco y borde negro.
-   - Se le aplica una animación definida mediante la regla `@keyframes desplazamiento2`.
-   - Durante la animación:
-     - La caja se desplaza horizontalmente (de 0px a 1200px y vuelve a 0px).
-     - Rota 360 grados y se convierte en un círculo en el punto intermedio.
-     - Cambia su color de fondo a **rojo** en el 75% del ciclo.
-   - La animación dura **10 segundos**, se repite **infinitamente** y utiliza una función de tiempo **linear**.
+2. **Estilos CSS:**
+   - Define un estilo básico para el título, incluyendo color, fondo y alineación.
+   - Define un estilo básico para el contenedor, incluyendo color de fondo, tamaño y forma.
 
-2. **Personalización sugerida**:
-
-   - Se pueden modificar los valores de la animación para:
-     - Cambiar la distancia del desplazamiento.
-     - Alterar el color de fondo en diferentes puntos.
-     - Ajustar la duración, el número de repeticiones o la función de tiempo (`ease`, `ease-in-out`, etc.).
+3. **Transiciones:**
+   - Aplica una transición al título que cambie el color del texto y el fondo al pasar el ratón por encima.
+   - Aplica una transición al contenedor que cambie el color de fondo y la forma (por ejemplo, de cuadrado a círculo) al pasar el ratón por encima.
+   - Utiliza diferentes propiedades de transición (`transition-duration`, `transition-timing-function`, `transition-property`) para controlar el efecto.
 
 ---
 
-### Estilos Generales
+### Parte 3: Animaciones
 
-1. **Reset de estilos**:
+1. **Estructura HTML:**
+   - Crea un archivo HTML básico con un contenedor (`.container`) que incluya un círculo (`#pulse`) y un cuadrado (`#movingSquare`).
 
-   - Se utiliza un selector universal (`*`) para eliminar márgenes, rellenos y subrayados predeterminados en todos los elementos.
+2. **Estilos CSS:**
+   - Define un estilo básico para el círculo, incluyendo tamaño, color de fondo y forma.
+   - Define un estilo básico para el cuadrado, incluyendo tamaño, color de fondo y posición.
+
+3. **Animaciones:**
+   - Crea una animación para el círculo que cambie su tamaño, color de fondo y posición al pasar el ratón por encima.
+   - Crea una animación para el cuadrado que lo haga moverse por la pantalla en diferentes direcciones.
+   - Usa `@keyframes` para definir las animaciones y aplícalas a los elementos correspondientes.
 
 ---
 
-### Ejercicios Propuestos
+### Indicaciones adicionales
 
-1. **Transiciones**:
-
-   - Modifica la transición del botón para que el color de texto (`color`) también cambie suavemente a amarillo en 1.5 segundos al hacer hover.
-   - Cambia el tiempo de transición del color de fondo a 2 segundos y el del borde a 1 segundo.
-   - Experimenta añadiendo otras propiedades (como `transform` para escalar el botón al hacer hover).
-
-2. **Animaciones**:
-
-   - Reduce la distancia de desplazamiento de la caja a 600px.
-   - Haz que el color de fondo cambie a **azul** en el 75% del ciclo.
-   - Cambia la duración de la animación a 5 segundos.
-   - Haz que la animación se repita solo 3 veces.
-   - Cambia la función de tiempo a `ease-in-out` y observa la diferencia en el movimiento.
+- **Transformaciones:** Experimenta con diferentes valores de `rotate`, `translate`, `scale`, `skew` y `transform-origin` para ver cómo afectan a los elementos.
+- **Transiciones:** Usa diferentes funciones de temporización (`ease-in`, `ease-out`, `linear`, etc.) para observar cómo influyen en el efecto de transición.
+- **Animaciones:** Usa `@keyframes` para definir animaciones y experimenta con distintas propiedades (`width`, `height`, `background-color`, `margin`, `top`, `left`).
+- Prueba las diferentes transformaciones y transiciones, comentando en la hoja de estilos las que ya hayas probado. Entrega todas las pruebas, de modo que se puedan descomentar para verificar su funcionamiento.
