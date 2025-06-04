@@ -44,7 +44,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 
 ### Apuntes Flexbox
 
-[Cheatsheet FLEXBOX](./03_Flexbox/Temario/recursos/CheatSheet_FLEXBOX.pdf)  
+[Cheatsheet FLEXBOX](./03_Flexbox/Temario/recursos/CheatSheet_flexbox.pdf)  
 [00 - Flexbox](./03_Flexbox/Temario/00_Flexbox.md)  
 
 ### Tareas Flexbox
