@@ -66,6 +66,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 [02 - Maquetación de Sitio Web Completo](./04_Grid/Ejercicios/Ej2/enunciado/enunciado.md)  
 [03 - Práctica CSS Grid: Portafolio Responsive con Grid Anidados](./04_Grid/Ejercicios/Ej3/enunciado/enunciado.md)  
 [04 - Simulación de Cara de Dado](./04_Grid/Ejercicios/Ej4/enunciado/enunciado.md)  
+[05 - Preguntas sobre Grid](./04_Grid/Ejercicios/Ej5/diseño.png)
 
 ## Bootstrap
 
