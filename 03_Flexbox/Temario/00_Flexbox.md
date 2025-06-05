@@ -85,7 +85,12 @@ Podemos decir que:
 
 _**Nota**_: La propiedad `flex-shrink` en Flexbox controla cuánto puede **encogerse** un ítem flexible si el espacio en el contenedor es **insuficiente**. Es decir, define si y cuánto se reducirá el tamaño de un ítem en comparación con otros cuando hay **falta de espacio**.
 
-_**Nota 2**_: Por otra parte tenemos `flex-basis` la cual tiene un comportamiento similar al width. Sirve para establecer un tamaño inicial base del objeto flexible.
+_**Nota 2**_: Por otra parte, tenemos `flex-basis` la cual tiene un comportamiento similar al width. Sirve para establecer un tamaño inicial base del objeto flexible.
+
+_**Nota 3**_: A mayores, estas tres propiedades se pueden agrupar en una única: `flex: grow shrink basis`. A modo de resumen podemos verlo como:
+  - *flex-grow*: Indica cuánto puede crecer un elemento para ocupar el espacio extra disponible en el contenedor flex, en proporción a los demás elementos.
+  - *flex-shrink*: Indica cuánto puede encogerse un elemento si falta espacio en el contenedor, también en proporción a los demás elementos.
+  - *flex-basis*: Define el tamaño base inicial del elemento antes de aplicar el crecimiento o encogimiento; es el punto de partida para calcular su tamaño final
 
 ### Alinear elementos de forma horizontal
 
@@ -108,4 +113,6 @@ La propiedad `align-items` en Flexbox se utiliza para **alinear** los ítems fle
 4. **`baseline`**: Los ítems se alinean según su **línea base** de texto. Esto es útil cuando tienes elementos de diferentes tamaños y quieres que se alineen de manera uniforme en base a su texto.
 5. **`stretch`** (valor por defecto): Los ítems se estiran para ocupar todo el espacio disponible en el contenedor. Esto significa que, si no se establece un tamaño específico para los ítems, se expandirán para llenar el contenedor.
 
-_*Nota*_: *align-self* es una propiedad de CSS Flexbox que permite alinear individualmente un elemento hijo dentro de un contenedor flexible, sobrescribiendo la alineación definida por la propiedad align-items del contenedor. Esto significa que puedes alinear un solo elemento de manera diferente al resto de los elementos dentro del mismo contenedor flex.
+_**Nota**_: *align-self* es una propiedad de CSS Flexbox que permite alinear individualmente un elemento hijo dentro de un contenedor flexible, sobrescribiendo la alineación definida por la propiedad align-items del contenedor. Esto significa que puedes alinear un solo elemento de manera diferente al resto de los elementos dentro del mismo contenedor flex.
+
+_**Nota 2**_: Por otra parte, tambien existe la propiedad *align-content*. Usa align-items para alinear elementos dentro de una sola línea. Usa align-content para alinear el grupo de líneas cuando hay varias líneas de elementos.
