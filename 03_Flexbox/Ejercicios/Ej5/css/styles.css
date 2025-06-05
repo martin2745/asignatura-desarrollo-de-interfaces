@@ -1,0 +1,329 @@
+/*Fuentes*/
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url(../recursos/fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(../recursos/fonts/BebasNeue.otf);
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(../recursos/fonts/websymbols-regular-webfont.eot);
+  src: url(../recursos/fonts/websymbols-regular-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../recursos/fonts/websymbols-regular-webfont.woff) format("woff"),
+    url(../recursos/fonts/websymbols-regular-webfont.ttf) format("truetype"),
+    url(../recursos/fonts/websymbols-regular-webfont.svg#websymbolsregular)
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --blanco: white;
+  --negro: black;
+  --gris: gray;
+  --azul-principal: #37bcf9;
+  --azul-letras: #00538c;
+  --engranaje-fondo: #ccc;
+  --carta-borde: #ccc;
+  --carta-sombra: #ddd;
+}
+
+/*Estilos generales*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header-hamburguesa {
+  display: none;
+}
+
+body {
+  background-image: url(../recursos/img/pattern.png);
+}
+
+/*Cabecera*/
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: "BebasNeue";
+}
+
+#header-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#logotipo {
+  width: 8vw;
+  height: 8vh;
+  margin-bottom: 1vh;
+  padding: 0 2vw 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--azul-principal);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+#logotipo:hover {
+  border-radius: 10px;
+  color: var(--negro);
+  background-color: var(--engranaje-fondo);
+}
+
+#logotipo h3 {
+  font-size: 4vh;
+  margin-top: 1vh;
+}
+
+#engranaje,
+.icono {
+  font-family: WebSymbolsRegular;
+}
+
+#engranaje {
+  font-size: 2rem;
+  animation: giro-engranaje 2s linear normal infinite;
+}
+
+#logotipo:hover #engranaje {
+  animation: desplazamientoAbajo 500ms linear normal 1;
+}
+
+#logotipo:hover h3 {
+  animation: desplazamientoDerecha 300ms linear normal 1;
+}
+
+nav {
+  width: 30vw;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 2vw;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--blanco);
+  letter-spacing: 2px;
+  transition: all 300ms;
+}
+
+nav ul li a:hover {
+  color: var(--azul-principal);
+  transform: scale(1.2);
+}
+
+/*Contenido principal*/
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*Banner*/
+#banner {
+  width: 100%;
+  height: 8vh;
+  margin-top: 3vh;
+  line-height: 10vh;
+  border: 10px solid var(--blanco);
+  box-shadow: 0px 0px 2px var(--gris);
+  background-image: url(../recursos/img/bakbaner.png);
+  background-position: -200px -200px;
+  overflow: hidden;
+  animation: bannerMovimiento 10s linear normal infinite;
+}
+
+#banner h1 {
+  color: var(--blanco);
+  font-size: 3vw;
+  letter-spacing: 0.25vw;
+  text-align: center;
+  font-family: "BebasNeue";
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px var(--negro);
+  animation: textoMovimiento 3s linear normal 1;
+}
+
+/*Cartas*/
+#cartas {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  border: 10px solid var(--blanco);
+}
+
+.carta {
+  flex-grow: 1;
+  width: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 1rem;
+  border: 1px solid var(--carta-borde);
+  box-shadow: 1px 1px 2px var(--carta-sombra);
+  transition: all 300ms;
+}
+
+.carta:hover {
+  width: 12rem;
+  background-color: var(--negro);
+}
+
+.carta .icono {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 5rem;
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.carta:hover .icono {
+  font-size: 8vh;
+  color: var(--azul-principal);
+}
+
+.carta .categoria {
+  width: 100%;
+  margin-top: 3rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: "Trebuchet MS";
+  text-align: center;
+  font-weight: bold;
+  color: var(--azul-letras);
+}
+
+.carta .descripcion {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--azul-letras);
+  font-family: "Trebuchet MS";
+}
+
+/*Animaciones*/
+@keyframes giro-engranaje {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes desplazamientoAbajo {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  0% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes desplazamientoDerecha {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bannerMovimiento {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -200px -200px;
+  }
+}
+
+@keyframes textoMovimiento {
+  0% {
+    transform: translateX(-600%) scale(5, 5);
+  }
+  50% {
+    transform: translateX(600%) scale(5, 5);
+  }
+  100% {
+    transform: translateX(-600%) scale(1, 1);
+  }
+}
+
+/*Media querys*/
+@media (max-width: 1200px) {
+  #banner h1 {
+    font-size: 5vw;
+  }
+
+  nav {
+    width: 50vw;
+  }
+
+  nav ul {
+    font-size: 2.5vw;
+  }
+
+  #logotipo {
+    width: 12vw;
+  }
+
+  #logotipo h3 {
+    font-size: 3vh;
+    margin-top: 1vh;
+  }
+}
+@media (max-width: 768px) {
+  #banner h1 {
+    font-size: 6vw;
+  }
+
+  #header-hamburguesa {
+    display: inline-block;
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 10vw;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  #header-wrap {
+    display: none;
+  }
+}
