@@ -90,7 +90,7 @@ _**Nota 2**_: Por otra parte, tenemos `flex-basis` la cual tiene un comportamien
 _**Nota 3**_: A mayores, estas tres propiedades se pueden agrupar en una única: `flex: grow shrink basis`. A modo de resumen podemos verlo como:
   - *flex-grow*: Indica cuánto puede crecer un elemento para ocupar el espacio extra disponible en el contenedor flex, en proporción a los demás elementos.
   - *flex-shrink*: Indica cuánto puede encogerse un elemento si falta espacio en el contenedor, también en proporción a los demás elementos.
-  - *flex-basis*: Define el tamaño base inicial del elemento antes de aplicar el crecimiento o encogimiento; es el punto de partida para calcular su tamaño final
+  - *flex-basis*: Define el tamaño base inicial del elemento antes de aplicar el crecimiento o encogimiento; es el punto de partida para calcular su tamaño final.
 
 ### Alinear elementos de forma horizontal
 
