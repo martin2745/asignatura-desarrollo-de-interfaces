@@ -53,6 +53,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 [02 - Diseño de interfaces web - agencia de viajes](./03_Flexbox/Ejercicios/Ej2/Ej2.1/enunciado/tarea.pdf)  
 [03 - Maquetación web con Flexbox](./03_Flexbox/Ejercicios/Ej3/enunciado/enunciado.md)  
 [04 - Diseño de interfaces web - gimnasio](./03_Flexbox/Ejercicios/Ej4/EXAMEN%20PRACT%202EVAL%20DIWD.pdf)  
+[05 - Maquetación web con Flexbox](./03_Flexbox/Ejercicios/Ej5/enunciado/enunciado.md)  
 
 ## Grid
 
