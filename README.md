@@ -38,7 +38,7 @@ En este repositorio encontraremos materiales para el desarrollo de interfaces we
 [04 - Maquetación web](./02_CSS/Ejercicios/Ej4/enunciado/enunciado.md)  
 [05 - Estilos Generales y Maquetación](./02_CSS/Ejercicios/Ej5/enunciado/enunciado.md)  
 [06 - Transformaciones, Transiciones y Animaciones con CSS3](./02_CSS/Ejercicios/Ej6/enunciado/enunciado.md)  
-
+[07 - Rejol con animaciones](./02_CSS/Ejercicios/Ej7/enunciado/enunciado.md)
 
 ## Flexbox
 

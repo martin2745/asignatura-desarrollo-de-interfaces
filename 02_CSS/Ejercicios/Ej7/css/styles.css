@@ -1,0 +1,96 @@
+/* Contedor principal do reloxo (esfera)*/
+.reloxo {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333;
+    /* Engade código para que a esfera do reloxio sexa circular */
+    border-radius: 50%;
+    position: relative;
+    /* Engade código para efecto de profundidade (gradiente e sombra)*/
+    box-shadow: 0px 0px 10px black, 0px 0px 5px black inset;
+    /*Centrado*/
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+/* Marcas horarias */
+.reloxo .hora {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: #333;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+}
+
+/* Crear 12 marcas horarias */
+.reloxo .hora:nth-child(1) { transform: rotate(0deg) translateY(140px); }
+.reloxo .hora:nth-child(2) { transform: rotate(30deg) translateY(140px); }
+.reloxo .hora:nth-child(3) { transform: rotate(60deg) translateY(140px); }
+.reloxo .hora:nth-child(4) { transform: rotate(90deg) translateY(140px); }
+.reloxo .hora:nth-child(5) { transform: rotate(120deg) translateY(140px); }
+.reloxo .hora:nth-child(6) { transform: rotate(150deg) translateY(140px); }
+.reloxo .hora:nth-child(7) { transform: rotate(180deg) translateY(140px); }
+.reloxo .hora:nth-child(8) { transform: rotate(210deg) translateY(140px); }
+.reloxo .hora:nth-child(9) { transform: rotate(240deg) translateY(140px); }
+.reloxo .hora:nth-child(10) { transform: rotate(270deg) translateY(140px); }
+.reloxo .hora:nth-child(11) { transform: rotate(300deg) translateY(140px); }
+.reloxo .hora:nth-child(12) { transform: rotate(330deg) translateY(140px); }
+
+
+/* Estilo común para todas as agullas*/
+.agulla {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    /* Inclúe a transformación necesaria para que xire desde o extremo inferior */
+}
+
+/* Estilo específico para a agulla das horas */
+.horas {
+    width: 6px;
+    height: 80px;
+    background: #000;
+    /* Engade animacion para a agulla das horas. Ten en conta que 12 horas=43200 segundos */
+    animation: xirar 43200s linear normal infinite;
+}
+
+/* Estilo específico para a agulla dos minutos */
+.minutos{
+    width: 4px;
+    height: 100px;
+    background: #444;
+    animation: xirar 3600s linear normal infinite;
+}
+
+/* Estilo específico para a agulla dos segundos */
+.segundos{
+    width: 2px;
+    height: 120px;
+    background: #f00;
+    animation: xirar 60s linear normal infinite;
+}
+
+/* Punto central do reloxo */
+.reloxo .punto{
+    background: #333;
+    position: absolute;
+    left: 49%;
+    bottom: 49%;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Animacións para cada agulla (xirar-horas, xirar-minutos, xirar-segundos) */
+@keyframes xirar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
